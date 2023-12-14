@@ -1,8 +1,17 @@
 .footer {
     background-color: getColor(download-color);
     position: relative;
+    padding-bottom: 47px;
+
+    &::after {
+        display: block;
+        width: 100%;
+        content: '';
+        border: 1px solid getColor(main-border-color);
+    }
 
     &__container {
+        position: relative;
     }
 
     &__image {
@@ -12,7 +21,7 @@
     }
 
     &__thanks {
-        width: 1538px;
+        width: 100%;
         top: -85px;
         position: absolute;
         padding-top: 68px;
@@ -48,11 +57,6 @@
         padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
-    }
-
-    &__bottom {
-        height: 47px;
-        border-top: 1px solid getColor(main-border-color)
     }
 
     &__logo {

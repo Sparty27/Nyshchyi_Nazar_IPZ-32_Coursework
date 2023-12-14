@@ -17,11 +17,25 @@
     &__part {
         display: flex;
         justify-content: space-between;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
     }
 
     &__zig-zag {
         width: 266.742px;
         height: 29.449px;
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    .info--no-align-items{
+        display: block;
+        align-items: none;
     }
 
     &__text {
