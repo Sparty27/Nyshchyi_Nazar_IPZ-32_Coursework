@@ -34,9 +34,9 @@ function styles() {
 }
 
 function watching() {
-    watch(['src/scss/main.scss'], styles)
-    watch(['src/js/main.js'], scripts)
-    watch(['src/*.html']).on('change', browserSync.reload);
+    watch(['src/scss/**/*.scss'], styles)
+    watch(['src/js/*.js'], scripts)
+    // watch(['src/*.html']).on('change', browserSync.reload);
 }
 
 function browsersync() {

@@ -21,17 +21,16 @@
     }
 
     &__info {
-        padding-top: 42px;
-        padding-bottom: 42px;
     }
 
     &__item {
-        padding: 40px 50px 60px 40px;
+        padding: 40px;
         border-radius: 10px;
         border: 1px solid getColor(secondary-border-color);
         max-width: 755.5px;
 
         display: flex;
+        align-items: center;
         gap: 20px;
     }
 

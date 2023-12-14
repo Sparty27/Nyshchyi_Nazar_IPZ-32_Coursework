@@ -37,7 +37,7 @@
         text-transform: uppercase;
         color: getColor(stats-color);
         display: flex;
-        justify-content: center;
+        justify-content: left;
     }
     &__description {
         margin-top: 21px;
@@ -54,9 +54,5 @@
         height: 80px;
         min-width: 80px;
         min-height: 80px;
-    }
-
-    &--shorter {
-        @include shorter(12.5px)
     }
 }
