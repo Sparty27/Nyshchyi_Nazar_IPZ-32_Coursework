@@ -12,16 +12,16 @@ function scripts() {
         'node_modules/jquery-circle-progress/dist/circle-progress.min.js',
       ])
       .pipe(concat('circle-progress.min.js'))
-      .pipe(dest('dist/js'));
+      .pipe(dest('src/js'));
     }
     jsBundle();
     return src([
         'src/js/*.js',
-        '!dist/js/main.min.js'
+        '!src/js/scripts.min.js'
     ])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
-        .pipe(dest('dist/js'))
+        .pipe(dest('src/js'))
         .pipe(browserSync.stream())
 }
 
@@ -29,7 +29,7 @@ function styles() {
     return src('src/scss/main.scss')
         .pipe(concat('main.min.css'))
         .pipe(scss({outputStyle: 'compressed'}))
-        .pipe(dest('dist/css'))
+        .pipe(dest('src/css'))
         .pipe(browserSync.stream())
 }
 
