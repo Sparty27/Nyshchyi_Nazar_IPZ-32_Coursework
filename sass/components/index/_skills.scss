@@ -1,0 +1,63 @@
+.skills {
+    padding-top: 200px;
+    padding-bottom: 200px;
+
+    &__header {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 64px */
+        text-transform: uppercase;
+        color: getColor(primary-color);        
+    }
+
+    &__list {
+        margin-top: 50px;
+        display: flex;
+        gap: 20px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    &__info {
+        padding-top: 42px;
+        padding-bottom: 42px;
+    }
+
+    &__item {
+        padding: 40px 50px 60px 40px;
+        border-radius: 10px;
+        border: 1px solid getColor(secondary-border-color);
+        max-width: 755.5px;
+
+        display: flex;
+        gap: 20px;
+    }
+
+    &__progress-bar {
+        min-width: 220px;
+        min-height: 220px;
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+        color: getColor(primary-color);
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 20px */
+        letter-spacing: -1px;
+        color: getColor(primary-color);
+    }
+}

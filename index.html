@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&family=Poppins:ital,wght@0,600;0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-top header__container">
+            <a href="#" class="logo">
+                <!-- here svg! -->
+                <svg class="header__logo">
+                    <use href="./images/svg/icons.svg#icon-logo"></use>
+                </svg>
+                <span class="logo__text"> tian </span>
+            </a>
+
+            <nav class="header__navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#home-section" class="header__nav-button">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#portfolio-section" class="header__nav-button">Portfolio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#skills-section" class="header__nav-button">Skills</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about-me-section" class="header__nav-button">About Me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__contact">
+                <button type="button" class="header__theme-button">
+                    <a class="header__circle"> </a>
+                    <svg class="header__theme">
+                        <use href="./images/svg/icons.svg#icon-moon"></use>
+                    </svg>
+                </button>
+                <button type="button" class="header__contact-button">
+                    Contact Me
+                </button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section id="home-section" class="hero">
+            <div class="hero__container container-top">
+                <div class="hero__info">
+                    <div class="hero__title">
+                        <h1 class="hero__header">Product designer</h1>
+                    </div>
+                    <p class="hero__text">CRISTIAN MU&Ntilde;OZ</p>
+                    <div class="hero__socials">
+                        <ul class="hero__social-list">
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.instagram.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.figma.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-figma"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.linkedin.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.twitter.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.telegram.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.medium.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="./images/svg/icons.svg#icon-medium"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="hero__download-button">
+                        Download Curriculum Vitae
+                        <svg class="hero__download-icon">
+                            <use href="./images/svg/icons.svg#icon-arrow-down">
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero__portal-container">
+                    <svg class="hero__portal-icon">
+                        <use href="./images/svg/icons.svg#icon-portal"></use>
+                    </svg>
+                </div>
+                <div class="hero__image">
+                    <img src="./images/image1.jpg" alt="Витвір мистецтва" width="694" />
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="stats__container container-top">
+                <div class="stats__success">
+                    <p class="stats__value">90%</p>
+                    <p class="stats__description">Job Success
+                        Score on Upwork</p>
+                </div>
+                <svg class="stats__icon">
+                    <use href="./images/svg/icons.svg#icon-dawn"></use>
+                </svg>
+                <div class="stats__figma-community">
+                    <p class="stats__value">>25.000</p>
+                    <p class="stats__description stats--shorter">Duplicates on Figma
+                        Community</p>
+                </div>
+                <svg class="stats__icon">
+                    <use href="./images/svg/icons.svg#icon-dawn"></use>
+                </svg>
+                <div class="stats__finished-works">
+                    <p class="stats__value">>2K</p>
+                    <p class="stats__description">In Finished
+                        Works</p>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio-section" class="portfolio">
+            <div class="portfolio__container container-top">
+                <h2 class="portfolio__header">Portfolio</h2>
+                <ul class="portfolio__list">
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                    <li class="portfolio__item">
+                        <div class="portfolio__image"><img src="./images/image2.jpg" alt="" width="300"></div>
+                        <h3 class="portfolio__title">Mi portal U</h3>
+                        <div class="portfolio__tags">
+                            <p class="portfolio__tag">
+                                UX Design
+                            </p>
+                            <p class="portfolio__tag">
+                                University
+                            </p>
+                            <p class="portfolio__tag">
+                                JavaScript
+                            </p>
+                        </div>
+                        <button class="portfolio__button">Figma community</button>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section id="skills-section" class="skills">
+            <div class="container-top skills__container">
+                <h2 class="skills__header">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <div class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">UX Design</h3>
+                            <p class="skills__description">
+                                UI design is the process of designing the visual and interactive elements of a user
+                                interface, such as buttons, icons, and layout, to create an intuitive and pleasing
+                                experience for users.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">UX Design</h3>
+                            <p class="skills__description">
+                                UI design is the process of designing the visual and interactive elements of a user
+                                interface, such as buttons, icons, and layout, to create an intuitive and pleasing
+                                experience for users.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">Information Architecture</h3>
+                            <p class="skills__description">Information architecture is the design of the structure and
+                                organization of content on a website or digital product to make it easy for users to
+                                navigate and understand.</p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">Figma</h3>
+                            <p class="skills__description">Figma is a cloud-based design tool that allows teams to
+                                collaborate on the design process in real time. It offers a range of features for
+                                designing, prototyping, and sharing user interfaces.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="quotation">
+            <div class="quotation__container container-top">
+                <h2 class="quotation__header">
+                    Kaleb Lechtenberg
+                </h2>
+                <p class="quotation__text">
+                    "Working with this freelancer has been great. His attention to detail is unparalleled and finished
+                    all work ahead of schedule. Will gladly send more work and I do not hesitate to recommend him to you
+                    on your project also."
+                </p>
+                <div class="quotation__icon-container">
+                    <svg class="quotation__icon">
+                        <use href="./images/svg/icons.svg#icon-shield">
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section id="about-me-section" class="about-me">
+            <div class="about-me__container container-top">
+                <div class="about-me__part">
+                    <div class="about-me__info">
+                        <h2 class="about-me__header">
+                            About me
+                            <svg class="about-me__zig-zag">
+                                <use href="./images/svg/icons.svg#icon-zig-zag-main">
+                            </svg>
+                        </h2>
+                        <p class="about-me__text">
+                            I am a <span class="gradient__designer">Product Designer</span> and Frontend Developer, I
+                            fully understand the process of design and development of a digital product, my job is to
+                            make a product usable and visually appealing, through the <span
+                                class="gradient__designer">Design Thinking </span>methodology I manage to create
+                            products that are endearing to users.
+                        </p>
+                    </div>
+                    <img src="./images/baby.jpg" width="745">
+                </div>
+                <div class="about-me__part">
+                    <img src="./images/child.jpg" width="793">
+                    <div class="about-me__info">
+                        <p class="about-me__text about-me__text--padded-176">
+                            I am passionate about <span class="gradient__learning">never stop learning</span>, I am
+                            constantly training and learning about new and changing <span
+                                class="gradient__learning">technology</span> trends that way I bring an updated opinion
+                            of the Tech industry.
+                        </p>
+                    </div>
+                </div>
+                <div class="about-me__part">
+                    <div class="about-me__info">
+                        <p class="about-me__text about-me__text--padded-168">
+                            My full name is <span class="gradient__name">Cristian David Muñoz Camayo</span> and more
+                            than what I said before I am a dreamer, I am proudly <span
+                                class="gradient__colombian">Colombian</span> and in me you will find a human being with
+                            the desire to do his best to help others.
+                        </p>
+                    </div>
+                    <img src="./images/teenager.jpg" width="745">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container-top">
+            <div class="footer__thanks">
+                <div class="footer__image">
+                    <image src="./images/wepik-photo-mode-2022926-13587 1.png" width="281">
+    
+                    </image>
+                </div>
+                <div class="footer__text-block">
+                    <p class="footer__text">Thanks for visit my website
+                    </p>
+                    <p class="footer__text">If you have any questions you can write me to any of my social networks, I
+                        am sure I will answer you.</p>
+                </div>
+                <svg class="footer__frame-35">
+                    <use href="./images/svg/icons.svg#icon-frame-35"></use>
+                </svg>
+            </div>
+            <div class="footer__nav-menu">
+                <a href="#" class="logo logo--gap">
+                    <!-- here svg! -->
+                    <svg class="footer__logo">
+                        <use href="./images/svg/icons.svg#icon-logo"></use>
+                    </svg>
+                    <span class="logo__text footer-text"> tian </span>
+                </a>
+                <ul class="footer__navigation">
+                    <li class="footer__item"><a href="#home-section" class="footer__nav-link">Home</a></li>
+                    <li class="footer__item"><a href="#portfolio-section" class="footer__nav-link">Portfolio</a></li>
+                    <li class="footer__item"><a href="#skills-section" class="footer__nav-link">Skills</a></li>
+                    <li class="footer__item"><a href="#about-me-section" class="footer__nav-link">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__bottom">
+        </div>
+    </footer>
+
+    <script src="./js/scrolling.js"></script>
+</body>
+
+</html>

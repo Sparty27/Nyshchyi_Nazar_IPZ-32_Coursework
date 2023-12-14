@@ -1,0 +1,62 @@
+.stats {
+    padding-top: 153px;
+    padding-left: 5px;
+    padding-right: 5px;
+
+    &__container {
+        background-color: getColor(secondary-background-color);
+        border-radius: 29px;
+        border: 1px solid getColor(secondary-border-color);
+        padding: 82px 100px 82px 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .stats__list {
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    &__success {
+        max-width: 287px;
+    }
+
+    &__figma-community {
+        max-width: 387px;
+    }
+    &__finished-works {
+        max-width: 190px;
+    }
+    &__value {
+        font-family: Anton;
+        font-size: 128px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%; /* 115.2px */
+        text-transform: uppercase;
+        color: getColor(stats-color);
+        display: flex;
+        justify-content: center;
+    }
+    &__description {
+        margin-top: 21px;
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+        color: getColor(stats-color);
+    }
+    &__icon {
+        width: 80px;
+        height: 80px;
+        min-width: 80px;
+        min-height: 80px;
+    }
+
+    &--shorter {
+        @include shorter(12.5px)
+    }
+}

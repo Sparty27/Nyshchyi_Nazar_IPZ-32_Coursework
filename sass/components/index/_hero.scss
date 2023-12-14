@@ -1,0 +1,111 @@
+.hero {
+    padding-top: 60px;
+    padding-left: 5px;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__info {
+        padding-top: 41.5px;
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    &__portal-container {
+        padding-top: 41.5px;
+        margin-right: 25px;
+    }
+
+    &__portal-icon {
+        width: 160px;
+        height: 160px;
+    }
+
+    &__header {
+        color: getColor(primary-color);
+        font-family: Anton;
+        font-size: 200px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%; /* 180px */
+        letter-spacing: -6px;
+        text-transform: uppercase;
+        width: 660px;
+        height: 355px;
+    }
+
+    &__text {
+        padding-top: 25px;
+        font-family: Anton;
+        font-size: 114px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%; /* 102.6px */
+        letter-spacing: -3.42px;
+        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__image {
+    }
+
+    &__socials {
+        margin-top: 70px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__social-item {
+        padding: 6px;
+        border-radius: 10px;
+        border: 1px solid getColor(primary-color);
+        width: 52px;
+        height: 52px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__social-link {
+        width: 40px;
+        height: 40px;
+    }
+
+    &__download-button {
+        margin-top: 40px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 20px */
+        letter-spacing: -1px;
+        color: getColor(primary-color);
+        background-color: getColor(download-color);
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 16px 187px 16px 190px;
+        border-radius: 0px;
+    }
+
+    &__download-icon {
+        fill: getColor(primary-color);
+        stroke: getColor(primary-color);
+        width: 20px;
+        height: 20px;
+    }
+}

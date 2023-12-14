@@ -1,0 +1,101 @@
+.about-me {
+    padding-top: 200px;
+    padding-bottom: 315px;
+
+    &__header {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 64px */
+        text-transform: uppercase;
+        color: getColor(primary-color);
+        display: flex;
+        align-items: center;
+    }
+
+    &__part {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__zig-zag {
+        width: 266.742px;
+        height: 29.449px;
+    }
+
+    &__text {
+        margin-top: 76px;
+        max-width: 665px;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+
+        &--padded-176{
+            margin-top: 176px;
+        }
+
+        &--padded-168{
+            margin-top: 168px;
+        }
+    }
+
+    .gradient__designer {
+        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+    }
+
+    .gradient__learning {
+        background: var(--Green_Blue, linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* H1/Gotham/Black/Active/Center-Left */
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+    }
+
+    .gradient__name {
+        background: var(--Blue_Purple, linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* H1/Gotham/Black/Active/Center-Left */
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.8px;
+    }
+
+    .gradient__colombian {
+        background: linear-gradient(90deg, #FFE76A 16.02%, #65C8FF 72.09%, #F00 1.1%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        /* H1/Gotham/Black/Active/Center-Left */
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.8px;    
+    }
+}

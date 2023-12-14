@@ -1,0 +1,89 @@
+.portfolio {
+    padding-top: 200px;
+
+    &__container {
+    }
+
+    &__header {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 64px */
+        text-transform: uppercase;
+    }
+
+    &__list {
+        margin-top: 36px;
+        display: flex;
+        gap: 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__item {
+        padding: 29px;
+        border-radius: 10px;
+        border: 1px solid getColor(secondary-border-color);
+        max-width: 360px;
+    }
+
+    &__image {
+        border-radius: 12px;
+        overflow: hidden;
+        height: 200px;
+    }
+
+    &__title {
+        margin-top: 23px;
+        color: var(--White, #FFF);
+
+        /* H2/Gotham/Bold/Active/Center-Left */
+        font-family: Montserrat;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 28px */
+        letter-spacing: -1.4px;        
+    }
+
+    &__tags {
+        margin-top: 21px;
+        display: flex;
+        gap: 5px;
+    }
+
+    &__tag {
+        font-family: Montserrat;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 14px */
+        letter-spacing: -0.7px;
+        color: getColor(tag-text-color);
+        background-color: getColor(tag-background-color);
+        border-radius: 12px;
+        border: 1px solid getColor(tag-border-color);
+        padding: 4px 8px;
+    }
+
+    &__button {
+        margin-top: 23px;
+        padding: 12px;
+        padding-left: auto;
+        padding-right: auto;
+        width: 100%;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 16px */
+        letter-spacing: -0.8px;
+        text-transform: capitalize;
+        color: getColor(primary-color);
+        background-color: getColor(download-color);
+        border-radius: 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

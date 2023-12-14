@@ -1,0 +1,26 @@
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    &__text {
+        font-family: Poppins;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 20px */
+    }
+
+    .footer-text {
+        color: getColor(primary-color);
+        font-family: Poppins;
+        font-size: 45px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 45px */
+    }
+
+    &--gap {
+        gap: 11.25px;
+    }
+}

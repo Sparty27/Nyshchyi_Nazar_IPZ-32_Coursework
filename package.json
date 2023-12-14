@@ -1,0 +1,17 @@
+{
+  "name": "nyshchyi_nazar_ipz-32_kursova",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-concat-css": "^3.1.0"
+  }
+}

@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/body";
+@import "./utils/mixin";
+
+// header
+@import "./components/header";
+@import "./components/logo";
+@import "./components/index/navigation";
+
+//main
+@import "./components/index/hero";
+@import "./components/index/stats";
+@import "./components/index/portfolio";
+@import "./components/index/skills";
+@import "./components/index/quotation";
+@import "./components/index/about-me";
+
+//footer
+@import "./components/footer";
