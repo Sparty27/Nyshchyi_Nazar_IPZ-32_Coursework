@@ -9,7 +9,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "gulp": "^4.0.2"
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^9.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "jquery-circle-progress": "^1.2.2",
+    "sass": "^1.69.5",
+    "swiper": "^11.0.5"
   },
   "dependencies": {
     "gulp-concat-css": "^3.1.0"
