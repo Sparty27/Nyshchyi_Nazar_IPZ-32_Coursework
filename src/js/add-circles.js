@@ -50,10 +50,10 @@ function handleIntersection(entries, observer) {
 }
 
 // Create an Intersection Observer
-const observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
+observer = new IntersectionObserver(handleIntersection, { threshold: 0.5 });
 
 // Observe each element with a specific ID
-const elementsToObserve = document.querySelectorAll('[id^="circle"]');
+elementsToObserve = document.querySelectorAll('[id^="circle"]');
 elementsToObserve.forEach(element => {
     observer.observe(element);
 });

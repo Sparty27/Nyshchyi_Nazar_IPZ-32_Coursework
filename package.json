@@ -14,6 +14,7 @@
     "gulp-autoprefixer": "^9.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
     "gulp-uglify-es": "^3.0.0",
     "jquery-circle-progress": "^1.2.2",
     "sass": "^1.69.5",
