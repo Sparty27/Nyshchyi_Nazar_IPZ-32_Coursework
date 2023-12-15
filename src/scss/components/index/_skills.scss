@@ -37,6 +37,20 @@
     &__progress-bar {
         min-width: 220px;
         min-height: 220px;
+        position: relative;
+    }
+
+    .progress-text {
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 
     &__title {

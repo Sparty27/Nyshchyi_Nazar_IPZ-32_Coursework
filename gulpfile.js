@@ -17,7 +17,8 @@ function scripts() {
     jsBundle();
     return src([
         'src/js/*.js',
-        '!src/js/scripts.min.js'
+        '!src/js/scripts.min.js',
+        '!src/js/circle-progress.min.js',
     ])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())
@@ -35,7 +36,7 @@ function styles() {
 
 function watching() {
     watch(['src/scss/**/*.scss'], styles)
-    watch(['src/js/*.js'], scripts)
+    watch(['src/js/*.js', '!src/js/scripts.min.js', '!src/js/circle-progress.min.js'], scripts)
     // watch(['src/*.html']).on('change', browserSync.reload);
 }
 

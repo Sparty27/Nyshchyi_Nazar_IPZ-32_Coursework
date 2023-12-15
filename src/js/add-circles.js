@@ -23,6 +23,26 @@ function handleIntersection(entries, observer) {
                 }
             });
 
+            // Add percentage text inside each circle progress bar
+            $('[id^="circle"]').append('<div class="progress-text">0%</div>');
+
+            // Function to update the percentage text
+            function updatePercentageText(percentage) {
+                $('[id^="circle"] .progress-text').text(percentage + "%");
+            }
+
+            // Animate the progress from 0% to 97%
+            let currentPercentage = 0;
+            const targetPercentage = 97;
+            const animationInterval = setInterval(() => {
+                currentPercentage += 1;
+                updatePercentageText(currentPercentage);
+
+                if (currentPercentage >= targetPercentage) {
+                    clearInterval(animationInterval);
+                }
+            }, 11);
+
             // Stop observing all elements after the first one is in the viewport
             observer.disconnect();
         }
@@ -37,6 +57,7 @@ const elementsToObserve = document.querySelectorAll('[id^="circle"]');
 elementsToObserve.forEach(element => {
     observer.observe(element);
 });
+
 
 /* Працює не синхронно
     <script>
