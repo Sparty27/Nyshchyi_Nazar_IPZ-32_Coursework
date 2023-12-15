@@ -20,7 +20,6 @@
     <header class="header">
         <div class="container-top header__container">
             <a href="#" class="logo">
-                <!-- here svg! -->
                 <svg class="header__logo">
                     <use href="src/images/svg/icons.svg#icon-logo"></use>
                 </svg>
@@ -44,9 +43,12 @@
                 </ul>
             </nav>
 
-            <div class="header__contact">
+            <div id="theme" class="header__contact">
                 <button type="button" class="header__theme-button">
                     <a class="header__circle"> </a>
+                    <svg class="header__theme">
+                        <use href="src/images/svg/icons.svg#icon-sun"></use>
+                    </svg>
                     <svg class="header__theme">
                         <use href="src/images/svg/icons.svg#icon-moon"></use>
                     </svg>
@@ -312,7 +314,7 @@
 
                         </div>
                         <div class="skills__info">
-                            <h3 class="skills__title">UX Design</h3>
+                            <h3 class="skills__title">UI Design</h3>
                             <p class="skills__description">
                                 UI design is the process of designing the visual and interactive elements of a user
                                 interface, such as buttons, icons, and layout, to create an intuitive and pleasing
@@ -429,7 +431,7 @@
                 <a href="#" class="logo logo--gap">
                     <!-- here svg! -->
                     <svg class="footer__logo">
-                        <use href="src/images/svg/icons.svg#icon-logo"></use>
+                        <use href="src/images/svg/icons.svg#icon-logo-bigger"></use>
                     </svg>
                     <span class="logo__text footer-text"> tian </span>
                 </a>
@@ -449,6 +451,22 @@
     <script src="src/js/circle-progress.min.js"></script>
     <script src="src/js/counter.min.js"></script>
     <script src="src/js/scripts.min.js"></script>
+    <script>
+        test = document.getElementById('theme');
+        circle = document.getElementsByClassName('header__circle')[0];
+        let isMovedRight = false;
+        test.addEventListener('click', () => {
+            document.body.classList.toggle("dark-theme");
+            if (isMovedRight) {
+                circle.classList.toggle('move-right');
+                isMovedRight = false;
+            }
+            else {
+                circle.classList.toggle('move-right');
+                isMovedRight = true;
+            }
+        });
+    </script>
 </body>
 
 </html>

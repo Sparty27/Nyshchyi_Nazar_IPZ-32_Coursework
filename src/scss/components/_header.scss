@@ -1,5 +1,5 @@
 .header {
-    color: getColor(primary-color);
+    color: var(--primary-color);
 
 
     &__logo {
@@ -53,22 +53,25 @@
         height: 24px;
         border-radius: 12px;
         background-color: white;
+        position: absolute;
+        transition: transform 0.3s ease;
     }
 
     &__theme-button {
-        background-color: getColor(theme-button-dark);
+        background-color: var(--theme-button-dark);
         border-radius: 32px;
         width: 56px;
         height: 32px;
         display: flex;
-        gap: 4px;
+        gap: 6px;
         align-items: center;
         padding: 4px;
+        position: relative;
     }
 
     &__contact-button {
-        background-color: getColor(contact-button-color);
-        color: inherit;
+        background-color: var(--contact-button-color);
+        color: white;
         padding: 12px 24px;
         font-family: 'Montserrat';
         font-size: 16px;
@@ -78,4 +81,8 @@
         letter-spacing: -0.8px;
         text-transform: capitalize;
     }
+}
+
+.move-right {
+    transform: translateX(100%);
 }

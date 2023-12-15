@@ -26,7 +26,7 @@
     }
 
     &__header {
-        color: getColor(primary-color);
+        color: var(--primary-color);
         font-family: Anton;
         font-size: 200px;
         font-style: normal;
@@ -66,7 +66,7 @@
     &__social-item {
         padding: 6px;
         border-radius: 10px;
-        border: 1px solid getColor(primary-color);
+        border: 1px solid var(--social-border-color);
         width: 52px;
         height: 52px;
         display: flex;
@@ -92,8 +92,8 @@
         font-weight: 400;
         line-height: 100%;
         letter-spacing: -1px;
-        color: getColor(primary-color);
-        background-color: getColor(download-color);
+        color: white;
+        background-color: var(--download-color);
         display: flex;
         justify-content: space-between;
         gap: 8px;
@@ -108,8 +108,8 @@
     
 
     &__download-icon {
-        fill: getColor(primary-color);
-        stroke: getColor(primary-color);
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
         width: 20px;
         height: 20px;
     }

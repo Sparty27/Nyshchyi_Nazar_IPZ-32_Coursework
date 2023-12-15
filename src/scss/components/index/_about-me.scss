@@ -9,7 +9,7 @@
         font-weight: 400;
         line-height: 100%; /* 64px */
         text-transform: uppercase;
-        color: getColor(primary-color);
+        color: var(--primary-color);
         display: flex;
         align-items: center;
     }
@@ -58,7 +58,7 @@
     }
 
     .gradient__designer {
-        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 10%, #FEE140 100%));
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -75,7 +75,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        /* H1/Gotham/Black/Active/Center-Left */
         font-family: Montserrat;
         font-size: 36px;
         font-style: normal;
@@ -89,7 +88,6 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        /* H1/Gotham/Black/Active/Center-Left */
         font-family: Montserrat;
         font-size: 36px;
         font-style: normal;
@@ -104,7 +102,6 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         
-        /* H1/Gotham/Black/Active/Center-Left */
         font-family: Montserrat;
         font-size: 36px;
         font-style: normal;
