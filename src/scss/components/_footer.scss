@@ -79,5 +79,11 @@
         line-height: 100%; /* 20px */
         letter-spacing: -1px;
         color: white;
+
+        &:hover,
+        &:focus {
+            transition: color 0.3s;
+            color: var(--navigation-dark-button-focus);
+        }
     }
 }

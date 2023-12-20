@@ -64,7 +64,6 @@
     }
 
     &__social-item {
-        padding: 6px;
         border-radius: 10px;
         border: 1px solid var(--social-border-color);
         width: 52px;
@@ -72,6 +71,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover{
+            background-color: var(--hero-link);
+        }
     }
 
     &__icon {
@@ -80,8 +82,14 @@
     }
 
     &__social-link {
-        width: 40px;
-        height: 40px;
+        padding: 6px;
+
+        width: 52px;
+        height: 52px;
+
+        &:focus{
+            background-color: var(--hero-link);
+        }
     }
 
     &__download-button {
@@ -104,6 +112,15 @@
         align-items: center;
         text-align: center;
         justify-content: center;
+
+        &:hover,
+        &:focus {
+            --contact-btn-color: #925FF0;
+            transition: background-color, 0.3s;
+            color: var(--contact-btn-color);
+            background-color: var(--theme-btn-dark);
+            fill: var(--contact-btn-color);
+        }
     }
     
 

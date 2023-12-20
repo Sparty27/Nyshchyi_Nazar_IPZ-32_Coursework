@@ -32,9 +32,17 @@
         font-weight: 400;
         line-height: 100%; /* 20px */
         letter-spacing: 0px;
+
+
     }
 
     &__nav-button {
+
+        &:hover,
+        &:focus {
+            transition: color 0.3s;
+            color: var(--navigation-dark-button-focus);
+        }
     }
 
     &__contact {
@@ -80,6 +88,14 @@
         line-height: 100%; /* 16px */
         letter-spacing: -0.8px;
         text-transform: capitalize;
+
+        &:hover,
+        &:focus {
+            --contact-btn-color: #925FF0;
+            transition: color, background-color, 0.3s;
+            color: var(--contact-btn-color);
+            background-color: var(--theme-btn-dark);
+        }
     }
 }
 

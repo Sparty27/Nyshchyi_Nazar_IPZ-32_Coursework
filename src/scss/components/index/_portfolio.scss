@@ -84,5 +84,14 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        &:hover,
+        &:focus {
+            --contact-btn-color: #925FF0;
+            transition: background-color, 0.3s;
+            color: var(--contact-btn-color);
+            background-color: var(--theme-btn-dark);
+            fill: var(--contact-btn-color);
+        }
     }
 }
