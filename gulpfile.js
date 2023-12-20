@@ -6,18 +6,14 @@ const uglify = require('gulp-uglify-es').default;
 const browserSync = require('browser-sync').create();
 
 function scripts() {
-    const jsBundle = () => {
-      src([
-        'node_modules/jquery-circle-progress/dist/circle-progress.min.js',
-      ])
-      .pipe(concat('circle-progress.min.js'))
-      .pipe(dest('src/js'));
-    }
-    jsBundle();
     return src([
-        'src/js/*.js',
+        'src/js/add-circles.js',
+        'src/js/scrolling.js',
+        'src/js/stats-animation.js',
+        'src/js/toggle-theme.js',
+        'src/js/circle-progress.min.js',
+        'src/js/counter.min.js',
         '!src/js/scripts.min.js',
-        '!src/js/circle-progress.min.js',
     ])
         .pipe(concat('scripts.min.js'))
         .pipe(uglify())

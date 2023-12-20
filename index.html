@@ -43,8 +43,8 @@
                 </ul>
             </nav>
 
-            <div id="theme" class="header__contact">
-                <button type="button" class="header__theme-button">
+            <div class="header__contact">
+                <button id="theme" type="button" class="header__theme-button">
                     <a class="header__circle"> </a>
                     <svg class="header__theme">
                         <use href="src/images/svg/icons.svg#icon-sun"></use>
@@ -448,25 +448,14 @@
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
-    <script src="src/js/circle-progress.min.js"></script>
-    <script src="src/js/counter.min.js"></script>
+    <!-- <script src="src/js/circle-progress.min.js"></script>
+    <script src="src/js/counter.min.js"></script> -->
+    
+    <!-- <script src="src/js/add-circles.js"></script>
+    <script src="src/js/scrolling.js"></script>
+    <script src="src/js/stats-animation.js"></script>
+    <script src="src/js/toggle-theme.js"></script> -->
     <script src="src/js/scripts.min.js"></script>
-    <script>
-        test = document.getElementById('theme');
-        circle = document.getElementsByClassName('header__circle')[0];
-        let isMovedRight = false;
-        test.addEventListener('click', () => {
-            document.body.classList.toggle("dark-theme");
-            if (isMovedRight) {
-                circle.classList.toggle('move-right');
-                isMovedRight = false;
-            }
-            else {
-                circle.classList.toggle('move-right');
-                isMovedRight = true;
-            }
-        });
-    </script>
 </body>
 
 </html>
