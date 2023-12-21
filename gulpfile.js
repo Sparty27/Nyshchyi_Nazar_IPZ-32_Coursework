@@ -13,6 +13,7 @@ function scripts() {
         'src/js/toggle-theme.js',
         'src/js/circle-progress.min.js',
         'src/js/counter.min.js',
+        'src/js/modal.js',
         '!src/js/scripts.min.js',
     ])
         .pipe(concat('scripts.min.js'))
@@ -31,7 +32,7 @@ function styles() {
 
 function watching() {
     watch(['src/scss/**/*.scss'], styles)
-    watch(['src/js/*.js', '!src/js/scripts.min.js', '!src/js/circle-progress.min.js'], scripts)
+    watch(['src/js/*.js', '!src/js/scripts.min.js'], scripts)
     // watch(['src/*.html']).on('change', browserSync.reload);
 }
 

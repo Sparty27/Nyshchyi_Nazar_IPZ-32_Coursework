@@ -1,0 +1,88 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 40px;
+    width: 528px;
+    height: 581px;
+    background-color: #3a3a3a;
+    opacity: 1;
+    border-radius: 4px;
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (max-width: 479px) {
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    &__button{
+        display: flex;
+        position: absolute;
+        top: 8px;
+        right: 8px;
+        width: 30px;
+        height: 30px;
+        align-items: center;
+        border-radius: 50%;
+        background-color: #3a3a3a;
+        border: 1px solid rgba(255, 255, 255, 1);
+        cursor: pointer;
+
+        &:hover .modal__icon,
+        &:focus .modal__icon {
+            --contact-btn-color: #925FF0;
+            fill: var(--contact-btn-color);
+            transition-duration: 250ms;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: #FFEC70;
+        }
+    }
+
+    &__icon {
+        width: 18px;
+        height: 18px;
+        fill: var(--contact-btn-color);
+    }
+
+    &__title {
+        display: flex;
+        justify-content: space-around;
+    
+        color: white;
+        text-align: center;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 0.6px;
+        margin-bottom: 12px;
+    }
+}

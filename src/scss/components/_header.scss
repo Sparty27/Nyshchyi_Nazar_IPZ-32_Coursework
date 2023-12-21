@@ -40,8 +40,9 @@
 
         &:hover,
         &:focus {
-            transition: color 0.3s;
+            transition: color, box-shadow 0.3s;
             color: var(--navigation-dark-button-focus);
+            text-shadow: 1px 1px 1px rgba(97, 91, 27,0.5);
         }
     }
 
@@ -75,6 +76,7 @@
         align-items: center;
         padding: 4px;
         position: relative;
+        cursor: pointer;
     }
 
     &__contact-button {
@@ -88,6 +90,7 @@
         line-height: 100%; /* 16px */
         letter-spacing: -0.8px;
         text-transform: capitalize;
+        cursor: pointer;
 
         &:hover,
         &:focus {

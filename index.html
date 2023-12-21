@@ -53,7 +53,7 @@
                         <use href="src/images/svg/icons.svg#icon-moon"></use>
                     </svg>
                 </button>
-                <button type="button" class="header__contact-button">
+                <button type="button" class="header__contact-button" data-modal-open>
                     Contact Me
                 </button>
             </div>
@@ -445,6 +445,57 @@
         </div>
     </footer>
 
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+          <button type="button" class="modal__button" data-modal-close> <svg class="modal__icon">
+              <use href="./src/images/svg/icons.svg#icon-close"></use>
+            </svg></button>
+          <p class="modal__title">Contact Me</p>
+          <form class="form">
+            <div class="form__contacts">
+              <div class="form__contact">
+                <label for="name" class="form__label">Name</label>
+                <input id="name" name="name" class="form__input" type="text" required placeholder="">
+                <!-- <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-person-mod"></use>
+                </svg> -->
+              </div>
+              <div class="form__contact">
+                <label for="phone" class="form__label">Phone Number</label>
+                <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
+                <!-- <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-phone-mod"></use>
+                </svg> -->
+              </div>
+              <div class="form__contact">
+                <label for="email" class="form__label">Email Address</label>
+                <input id="email" name="email" class="form__input" type="email" required placeholder="">
+                <!-- <svg class="form__icon">
+                  <use href="./images/icons.svg#icon-mail-mod"></use>
+                </svg> -->
+              </div>
+              <div class="form__contact">
+                <label for="comment" class="form__label">Message</label>
+                <textarea id="comment" name="comment" id="text" placeholder="Enter your message"
+                  class="form__textarea"></textarea>
+              </div>
+              <!-- <div class="form__checkbox">
+                <input type="checkbox" name="agree" value="agree" id="agree" class="form__check form__check-icon__hidden"
+                  required>
+                <label for="agree" class="form__agree-label">
+                  <span>
+                    <svg class="form__check-icon">
+                      <use href="./images/icons.svg#icon-check"></use>
+                    </svg>
+                </span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a>
+                </label>
+              </div> -->
+              <input type="submit" class="form__send" value="Відправити"></input>
+            </div>
+          </form>
+        </div>
+      </div>
+
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
 
@@ -456,6 +507,7 @@
     <script src="src/js/stats-animation.js"></script>
     <script src="src/js/toggle-theme.js"></script> -->
     <script src="src/js/scripts.min.js"></script>
+    <!-- <script src="src/js/modal.js"></script> -->
 </body>
 
 </html>
