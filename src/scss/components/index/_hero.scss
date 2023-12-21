@@ -73,6 +73,7 @@
         justify-content: center;
         &:hover{
             background-color: var(--hero-link);
+            --background-primary-color: var(--hero-link);
         }
     }
 
