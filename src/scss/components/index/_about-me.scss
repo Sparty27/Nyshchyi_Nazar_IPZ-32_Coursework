@@ -38,6 +38,14 @@
         align-items: none;
     }
 
+    // &__picture {
+    //     max-height: 530px;
+    // }
+
+    img {
+        height: 100%;
+    }
+
     &__text {
         margin-top: 76px;
         max-width: 665px;
