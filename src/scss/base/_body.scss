@@ -11,7 +11,13 @@ body {
     // font-weight: 400;
     // font-size: 20px;
     // letter-spacing: -1px;
+
+    @include match(mobile) {
+        overflow-x: hidden;
+    }
 }
+
+
 
 .dark-theme {
     --background-primary-color: #FFFFFF;
