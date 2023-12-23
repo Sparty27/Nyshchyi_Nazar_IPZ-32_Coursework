@@ -39,7 +39,7 @@
     }
 
     &__part {
-        display: flex;
+        display: block;
         justify-content: space-between;
 
         &:nth-child(even) {

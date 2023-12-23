@@ -19,20 +19,22 @@
         border-radius: 29px;
         border: 1px solid var(--secondary-border-color);
 
-        padding: 82px 100px 82px 100px;
-        display: flex;
-        justify-content: space-between;
+        padding: 82px 100px;
+        display: block;
+        justify-content: center;
         align-items: center;
+        margin-left: 22px;
+        margin-right: 22px;
+        padding-left: 0px;
+        padding-right: 0px;
 
         @include match(mobile) {
             display: block;
-            justify-content: center;
-            margin-left: 22px;
-            margin-right: 22px;
             padding-left: 0px;
             padding-right: 0px;
         }
         @include match(tablet) {
+            justify-content: space-between;
             display: flex;
             margin-left: 80px;
             margin-right: 80px;
@@ -48,6 +50,8 @@
     }
     
     &__success {
+        max-width: 178px;
+        margin: 0 auto;
         
         @include match(mobile) {
             max-width: 178px;
@@ -62,10 +66,10 @@
     }
 
     &__figma-community {
+        margin: 0 auto;
+        margin-top: 144px;
+        max-width: 216px;
         @include match(mobile) {
-            margin: 0 auto;
-            margin-top: 144px;
-            max-width: 216px;
         }
         @include match(tablet) {
             margin-top: 0px;
@@ -75,10 +79,10 @@
         }
     }
     &__finished-works {
+        margin: 0 auto;
+        margin-top: 144px;
+        max-width: 117px;
         @include match(mobile) {
-            margin: 0 auto;
-            margin-top: 144px;
-            max-width: 117px;
         }
         @include match(tablet) {
             margin-top: 0px;
@@ -89,13 +93,15 @@
     }
     &__value {
         font-family: Anton;
-        font-size: 128px;
+        font-size: 64px;
         font-style: normal;
         font-weight: 400;
         line-height: 90%; /* 115.2px */
         text-transform: uppercase;
         color: var(--stats-color);
         display: flex;
+        justify-content: space-around;
+
 
         @include match(mobile) {
             justify-content: space-around;
@@ -111,6 +117,7 @@
             justify-content: left;
         }
     }
+
     &__description {
         margin-top: 21px;
         font-family: Montserrat;
@@ -121,6 +128,7 @@
         line-height: 100%; /* 22px */
         letter-spacing: -1.1px;
         color: var(--stats-color);
+        text-align: center;
 
         
         @include match(mobile) {

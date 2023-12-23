@@ -5,6 +5,8 @@
     &__container {
         display: flex;
         justify-content: space-around;
+        padding-left: 16px;
+        padding-right: 16px;
 
         @include match(mobile) {
             padding-left: 32px;
@@ -38,9 +40,9 @@
     &__portal-container {
         padding-top: 41.5px;
         margin-right: 25px;
+        display: none;
 
         @include match(mobile) {
-            display: none;
         }
         @include match(tablet) {
         }
@@ -57,18 +59,18 @@
     &__header {
         color: var(--primary-color);
         font-family: Anton;
-        font-size: 200px;
+        font-size: 90px;
         font-style: normal;
         font-weight: 400;
         line-height: 90%; /* 180px */
-        letter-spacing: -6px;
+        letter-spacing: -3.3px;
         text-transform: uppercase;
+        text-align: center;
+
 
         @include match(mobile) {
-            text-align: center;
             font-size: 110px;
             line-height: 90%; /* 99px */
-            letter-spacing: -3.3px;
         }
         @include match(tablet) {
             text-align: start;
@@ -89,6 +91,10 @@
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
+        padding-top: 10px;
+        font-size: 50px;
+        line-height: 90%; /* 57.6px */
+        letter-spacing: -2.1px;
 
         @include match(mobile) {
             padding-top: 10px;
@@ -107,9 +113,10 @@
     }
 
     &__image {
+        display: none;
+
 
         @include match(mobile) {
-            display: none;
         }
         @include match(tablet) {
         }
@@ -125,6 +132,11 @@
     &__social-list {
         display: flex;
         justify-content: space-between;
+
+
+        @include match(mobile){
+            justify-content: space-between;
+        }
     }
 
     &__social-item {

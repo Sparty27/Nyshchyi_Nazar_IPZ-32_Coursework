@@ -10,10 +10,9 @@
     }
 
     &__container {
-
+        padding-left: 22px;
+        padding-right: 22px;
         @include match(mobile) {
-            padding-left: 22px;
-            padding-right: 22px;
         }
         @include match(tablet) {
             padding-left: 80px;

@@ -13,6 +13,8 @@
         justify-content: space-between;
         padding-top: 50px;
         padding-bottom: 30px;
+        padding-left: 22px;
+        padding-right: 22px;
 
         @include match(mobile) {
             padding-left: 22px;
@@ -34,9 +36,9 @@
 
     &__nav-list {
         gap: 30px;
+        display: none;
 
         @include match(mobile) {
-            display: none;
         }
         @include match(tablet) {
             display: flex;
@@ -69,9 +71,9 @@
     &__contact {
         align-items: center;
         gap: 20px;
+        display: none;
 
         @include match(mobile) {
-            display: none;
         }
         @include match(tablet) {
             display: flex;

@@ -13,9 +13,9 @@
     }
 
     &__container {
+        padding-left: 22px;
+        padding-right: 22px;
         @include match(mobile) {
-            padding-left: 22px;
-            padding-right: 22px;
         }
         @include match(tablet) {
             padding-left: 80px;
@@ -60,8 +60,8 @@
         border-radius: 10px;
         border: 1px solid var(--secondary-border-color);
         max-width: 386px;
-        display: flex;
-        align-items: center;
+        display: block;
+        justify-content: center;
         gap: 20px;
 
         @include match(mobile) {
@@ -86,6 +86,8 @@
         min-width: 220px;
         min-height: 220px;
         position: relative;
+        display: flex;
+        justify-content: space-around;
 
         @include match(mobile) {
             display: flex;

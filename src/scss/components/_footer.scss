@@ -144,9 +144,9 @@
     }
 
     &__nav-menu {
-        padding-top: 146px;
+        padding-top: 118px;
         padding-bottom: 30px;
-        display: flex;
+        display: block;
         justify-content: space-between;
 
         
@@ -154,6 +154,7 @@
             display: block;
         }
         @include match(tablet) {
+            padding-top: 146px;
             display: flex;
         }
         @include match(desktop) {
