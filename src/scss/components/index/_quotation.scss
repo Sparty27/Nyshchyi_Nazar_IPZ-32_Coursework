@@ -13,9 +13,9 @@
     @include match(desktop) {
         padding-top: 147px;
         padding-bottom: 147px;
-        
+
     }
-    background: url("/src/images/quotation-pattern.jpg");
+    background: url("../../../images/quotation-pattern.jpg");
     background-size: cover;
     background-position: center;
 
