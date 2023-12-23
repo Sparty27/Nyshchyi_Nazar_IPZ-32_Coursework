@@ -12,9 +12,9 @@
 
     &__container {
         position: relative;
+        padding-left: 22px;
+        padding-right: 22px;
         @include match(mobile) {
-            padding-left: 22px;
-            padding-right: 22px;
         }
         @include match(tablet) {
             padding-left: 80px;
@@ -27,8 +27,8 @@
 
     &__image {
         position: absolute;
-        top: -217px;
-        left: -33px;
+        top: -78px;
+        left: -10px;
 
         
         @include match(mobile) {
@@ -44,14 +44,19 @@
     }
 
     &__thanks {
-        top: -85px;
+        top: -45px;
         position: absolute;
         background-color: var(--thanks-background-color);
+        color: white;
         border-radius: 15px;
         display: flex;
         gap: 50px;
         height: 112px;
-
+        max-width: calc(100% - 44px);
+        padding: 26px 44px 26px 133px;
+        @media screen and (max-width: 365px){
+            padding-top: 18px;
+        }
         
         @include match(mobile) {
             top: -45px;
@@ -108,12 +113,12 @@
 
     &__text {
         font-family: Montserrat;
-        font-size: 21px;
+        font-size: 12px;
         font-style: normal;
-        font-weight: 700;
-        line-height: 100%; /* 22px */
-        letter-spacing: -1.1px;
-        color: white;
+        font-weight: 300;
+        line-height: 100%; /* 12px */
+        letter-spacing: -0.6px;
+        text-transform: capitalize;
 
         
         @include match(mobile) {
@@ -177,9 +182,11 @@
         align-items: center;
         gap: 30px;
         margin-top: 40px;
+        justify-content: space-around;
+        gap: 20px;
 
         @include match(mobile) {
-            justify-content: space-around;
+            gap: 30px;
         }
         @include match(tablet) {
             margin-top: 0px;
@@ -196,6 +203,10 @@
         line-height: 100%; /* 20px */
         letter-spacing: -1px;
         color: white;
+
+        @media screen and (max-width: 373px){
+            font-size: 18px;
+        }
 
         &:hover,
         &:focus {

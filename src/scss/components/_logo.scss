@@ -2,8 +2,9 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    justify-content: center;
+
     @include match(mobile) {
-        justify-content: center;
     }
     @include match(tablet) {
         justify-content: start;

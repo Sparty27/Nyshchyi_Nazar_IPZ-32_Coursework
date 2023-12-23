@@ -63,6 +63,7 @@
         display: block;
         justify-content: center;
         gap: 20px;
+        max-width: 100%;
 
         @include match(mobile) {
             display: block;
@@ -83,13 +84,15 @@
     }
 
     &__progress-bar {
-        min-width: 220px;
-        min-height: 220px;
+        min-width: auto;
+        min-height: auto;
         position: relative;
         display: flex;
         justify-content: space-around;
 
         @include match(mobile) {
+            min-width: 220px;
+            min-height: 220px;
             display: flex;
             justify-content: space-around;
         }
@@ -120,10 +123,14 @@
         line-height: 100%; /* 36px */
         letter-spacing: -1.8px;
         color: var(--primary-color);
+        text-align: center;
+        margin-top: 20px;
+        @media screen and (max-width: 330px) {
+            font-size: 30px;
+        }
 
         @include match(mobile) {
             margin-top: 20px;
-            text-align: center;
         }
         @include match(tablet) {
             margin-top: 0px;
@@ -142,9 +149,10 @@
         line-height: 100%; /* 20px */
         letter-spacing: -1px;
         color: var(--primary-color);
+        text-align: center;
+
 
         @include match(mobile) {
-            text-align: center;
         }
         @include match(tablet) {
             text-align: start;
