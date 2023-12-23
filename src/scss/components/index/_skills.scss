@@ -1,6 +1,30 @@
 .skills {
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-bottom: 140px;
+    padding-top: 140px;
+
+    @include match(mobile) {
+    }
+    @include match(tablet) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+
+    }
+    @include match(desktop) {
+    }
+
+    &__container {
+        @include match(mobile) {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        @include match(tablet) {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include match(desktop) {
+            padding: 0px;
+        }
+    }
 
     &__header {
         font-family: Anton;
@@ -14,10 +38,18 @@
 
     &__list {
         margin-top: 50px;
-        display: flex;
         gap: 20px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+
+        @include match(mobile) {
+        }
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     &__info {
@@ -27,17 +59,42 @@
         padding: 40px;
         border-radius: 10px;
         border: 1px solid var(--secondary-border-color);
-        max-width: 755.5px;
-
+        max-width: 386px;
         display: flex;
         align-items: center;
         gap: 20px;
+
+        @include match(mobile) {
+            display: block;
+            justify-content: center;
+            max-width: 386px;
+            padding-bottom: 60px;
+        }
+        @include match(tablet) {
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 864px;
+        }
+        @include match(desktop) {
+            max-width: 755.5px;
+        }
     }
 
     &__progress-bar {
         min-width: 220px;
         min-height: 220px;
         position: relative;
+
+        @include match(mobile) {
+            display: flex;
+            justify-content: space-around;
+        }
+        @include match(tablet) {
+            width: 220px;
+            height: 220px;
+        }
     }
 
     .progress-text {
@@ -61,6 +118,17 @@
         line-height: 100%; /* 36px */
         letter-spacing: -1.8px;
         color: var(--primary-color);
+
+        @include match(mobile) {
+            margin-top: 20px;
+            text-align: center;
+        }
+        @include match(tablet) {
+            margin-top: 0px;
+            text-align: start;
+        }
+        @include match(desktop) {
+        }
     }
 
     &__description {
@@ -72,5 +140,14 @@
         line-height: 100%; /* 20px */
         letter-spacing: -1px;
         color: var(--primary-color);
+
+        @include match(mobile) {
+            text-align: center;
+        }
+        @include match(tablet) {
+            text-align: start;
+        }
+        @include match(desktop) {
+        }
     }
 }

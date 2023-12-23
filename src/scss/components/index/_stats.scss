@@ -1,5 +1,16 @@
 .stats {
-    padding-top: 153px;
+    padding-top: 90px;
+
+    @include match(mobile) {
+    }
+    @include match(tablet) {
+        padding-top: 236px;
+    }
+    @include match(desktop) {
+        padding-top: 153px;
+
+    }
+
     padding-left: 5px;
     padding-right: 5px;
 
@@ -92,7 +103,6 @@
             line-height: 90%; /* 57.6px */
         }
         @include match(tablet) {
-            justify-content: left;
         }
         @include match(desktop) {
             font-size: 128px;

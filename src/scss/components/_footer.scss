@@ -12,27 +12,71 @@
 
     &__container {
         position: relative;
+        @include match(mobile) {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        @include match(tablet) {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include match(desktop) {
+            padding: 0px;
+        }
     }
 
     &__image {
         position: absolute;
         top: -217px;
         left: -33px;
+
+        
+        @include match(mobile) {
+            top: -78px;
+            left: -10px;
+        }
+        @include match(tablet) {
+            top: -217px;
+            left: -33px;
+        }
+        @include match(desktop) {
+        }
     }
 
     &__thanks {
-        width: 100%;
         top: -85px;
         position: absolute;
-        padding-top: 68px;
-        padding-right: 219px;
-        padding-left: 298px;
-        padding-bottom: 68px;
         background-color: var(--thanks-background-color);
         border-radius: 15px;
         display: flex;
         gap: 50px;
-        height: 180px;
+        height: 112px;
+
+        
+        @include match(mobile) {
+            top: -45px;
+            padding: 26px 44px 26px 133px;
+            height: 112px;
+            max-width: 386px;
+        }
+        @include match(tablet) {
+            top: -85px;
+            padding: 46px 88px 46px 298px;
+            height: 180px;
+            max-width: 864px;
+        }
+        @include match(desktop) {
+            max-width: 1538px;
+            width: 100%;
+            top: -85px;
+            position: absolute;
+            padding: 68px 219px 68px 298px;
+            background-color: var(--thanks-background-color);
+            border-radius: 15px;
+            display: flex;
+            gap: 50px;
+            height: 180px;
+        }
     }
 
     &__frame-35 {
@@ -40,7 +84,26 @@
         width: 150px;
         height: 125px;
         top: 0px;
-        left: 1388px;
+        left: 348px;
+        display: none;
+
+
+        @include match(mobile) {
+            left: 302px;
+            width: 82px;
+            height: 69px;
+            display: block;
+        }
+        @include match(tablet) {
+            width: 150px;
+            height: 125px;
+            left: 714px;
+            display: block;
+
+        }
+        @include match(desktop) {
+            left: 1388px;
+        }
     }
 
     &__text {
@@ -51,6 +114,33 @@
         line-height: 100%; /* 22px */
         letter-spacing: -1.1px;
         color: white;
+
+        
+        @include match(mobile) {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 100%; /* 12px */
+            letter-spacing: -0.6px;
+            text-transform: capitalize;
+        }
+        @include match(tablet) {
+            text-transform: none;
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 22px */
+            letter-spacing: -1.1px;
+        }
+        @include match(desktop) {
+            text-transform: none;
+            font-size: 21px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 22px */
+            letter-spacing: -1.1px;
+            color: white;
+        }
     }
 
     &__nav-menu {
@@ -58,17 +148,43 @@
         padding-bottom: 30px;
         display: flex;
         justify-content: space-between;
+
+        
+        @include match(mobile) {
+            display: block;
+        }
+        @include match(tablet) {
+            display: flex;
+        }
+        @include match(desktop) {
+        }
     }
 
     &__logo {
         width: 60px;
         height: 60px;
+        @include match(mobile) {
+        }
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+        }
     }
 
     &__navigation {
         display: flex;
         align-items: center;
         gap: 30px;
+        margin-top: 40px;
+
+        @include match(mobile) {
+            justify-content: space-around;
+        }
+        @include match(tablet) {
+            margin-top: 0px;
+        }
+        @include match(desktop) {
+        }
     }
 
     &__nav-link {

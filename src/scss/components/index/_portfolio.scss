@@ -1,7 +1,27 @@
 .portfolio {
-    padding-top: 200px;
+    padding-top: 150px;
+
+    @include match(mobile) {
+    }
+    @include match(tablet) {
+        padding-top: 200px;
+    }
+    @include match(desktop) {
+    }
 
     &__container {
+
+        @include match(mobile) {
+            padding-left: 22px;
+            padding-right: 22px;
+        }
+        @include match(tablet) {
+            padding-left: 80px;
+            padding-right: 80px;
+        }
+        @include match(desktop) {
+            padding: 0px;
+        }
     }
 
     &__header {
@@ -15,16 +35,36 @@
 
     &__list {
         margin-top: 36px;
-        display: flex;
         gap: 30px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
+
+        @include match(mobile) {
+        }
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+            display: flex;
+            gap: 30px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
     &__item {
         padding: 29px;
         border-radius: 10px;
         border: 1px solid var(--secondary-border-color);
-        max-width: 360px;
+        max-width: 386px;
+        @include match(mobile) {
+            max-width: 386px;
+        }
+        @include match(tablet) {
+            max-width: 417px;
+        }
+        @include match(desktop) {
+            max-width: 360px;
+        }
+
     }
 
     &__image {
