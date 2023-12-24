@@ -14,6 +14,8 @@ function scripts() {
         'src/js/circle-progress.min.js',
         'src/js/counter.min.js',
         'src/js/modal.js',
+        'src/js/form.js',
+        'src/js/swipe-portfolio.js',
         '!src/js/scripts.min.js',
     ])
         .pipe(concat('scripts.min.js'))
