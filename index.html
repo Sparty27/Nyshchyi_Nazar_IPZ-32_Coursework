@@ -614,7 +614,7 @@
               <use href="./src/images/svg/icons.svg#icon-close"></use>
             </svg></button>
           <p class="modal__title">Contact Me</p>
-          <form class="form">
+          <form id="form" class="form">
             <div class="form__contacts">
               <div class="form__contact">
                 <label for="name" class="form__label">Name</label>
@@ -653,7 +653,7 @@
                 </span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a>
                 </label>
               </div> -->
-              <input id="send-button" type="submit" class="form__send" value="Send"></input>
+              <input type="submit" class="form__send" value="Send"></input>
             </div>
           </form>
         </div>
@@ -693,8 +693,8 @@
             api.send();
         }
 
-        button = document.getElementById('send-button');
-        button.addEventListener('click', sendMessage);
+        form = document.getElementById('form');
+        form.addEventListener('submit', sendMessage);
     </script>
     <!-- <script src="src/js/modal.js"></script> -->
 </body>
