@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,10 +14,7 @@
         rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-        />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="src/css/main.min.css" />
 </head>
 
@@ -33,16 +31,16 @@
             <nav class="header__navigation">
                 <ul class="header__nav-list">
                     <li class="header__nav-item">
-                        <a href="#home-section" class="header__nav-button">Home</a>
+                        <a href="#home-title" class="header__nav-button">Home</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#portfolio-section" class="header__nav-button">Portfolio</a>
+                        <a href="#portfolio-title" class="header__nav-button">Portfolio</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#skills-section" class="header__nav-button">Skills</a>
+                        <a href="#skills-title" class="header__nav-button">Skills</a>
                     </li>
                     <li class="header__nav-item">
-                        <a href="#about-me-section" class="header__nav-button">About Me</a>
+                        <a href="#about-me-title" class="header__nav-button">About Me</a>
                     </li>
                 </ul>
             </nav>
@@ -61,18 +59,70 @@
                     Contact Me
                 </button>
             </div>
+            <button class="mobile_button" type="button" data-menu-button-open aria-expanded="false">
+                <svg class="mobile_button-icon">
+                    <use class="mobile_button--open" href="./src/images/svg/icons.svg#icon-burger-open"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile" data-menu>
+            <nav class="mobile__nav">
+                <div class="mobile__top-container">
+                    <ul class="mobile__nav-list">
+                        <li class="mobile__nav-item">
+                            <a href="#home-title" class="mobile__nav-link">Home</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#portfolio-title" class="mobile__nav-link">Portfolio</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#skills-title" class="mobile__nav-link">Skills</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#about-me-title" class="mobile__nav-link">About Me</a>
+                        </li>
+                    </ul>
+                    <button class="mobile_top-button" data-menu-button-close>
+                        <svg class="mobile_button-icon">
+                            <use class="" href="./src/images/svg/icons.svg#icon-burger-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile__buttons">
+                    <button id="mobile-theme" type="button" class="header__theme-button">
+                        <a class="header__circle"> </a>
+                        <svg class="header__theme">
+                            <use href="src/images/svg/icons.svg#icon-sun"></use>
+                        </svg>
+                        <svg class="header__theme">
+                            <use href="src/images/svg/icons.svg#icon-moon"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="header__contact-button mobile-cnt-btn" data-modal-open>
+                        Contact Me
+                    </button>
+                </div>
+            </nav>
+            <ul class="mobile__contacts-list">
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-link link" href="tel:+380961111111">+38 050 024 34 92</a>
+                </li>
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-link" href="mailto:info@devstudio.com">nyshchyi.nazar@gmail.com</a>
+                </li>
+            </ul>
         </div>
     </header>
     <main>
-        <section id="home-section" class="hero">
+        <section class="hero">
             <div class="hero__container container-top">
                 <div class="hero__info">
-                    <div class="hero__title">
+                    <div id="home-title" class="hero__title">
                         <h1 class="hero__header">Product designer
                             <p class="hero__text">CRISTIAN MU&Ntilde;OZ</p>
                         </h1>
                     </div>
-                    
+
                     <div class="hero__socials">
                         <ul class="hero__social-list">
                             <li class="hero__social-item">
@@ -136,8 +186,8 @@
                         <source srcset="
                             ./src/images/art-694.jpg 1x
                           " media="(min-width: 1538px)" sizes="694px" width="694" type="image/jpg" />
-                        <img srcset="./src/images/art-694.jpg 1x"
-                          src="./src/images/art-694.jpg" alt="Just an art" width="694"/>
+                        <img srcset="./src/images/art-694.jpg 1x" src="./src/images/art-694.jpg" alt="Just an art"
+                            width="694" />
                     </picture>
                 </div>
             </div>
@@ -169,7 +219,7 @@
                 </div>
             </div>
         </section>
-        <section id="portfolio-section" class="portfolio">
+        <section class="portfolio">
             <div class="portfolio__container container-top">
                 <!-- Slider main container -->
                 <!-- <div class="swiper">
@@ -186,7 +236,7 @@
                 
                     <div class="swiper-scrollbar"></div>
                 </div> -->
-                <h2 class="portfolio__header">Portfolio</h2>
+                <h2 id="portfolio-title" class="portfolio__header">Portfolio</h2>
                 <div class="portfolio__desktop">
                     <ul class="portfolio__list">
                         <li class="portfolio__item">
@@ -201,8 +251,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -217,7 +267,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -231,8 +282,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -247,7 +298,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -261,8 +313,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -277,7 +329,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -291,8 +344,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -307,7 +360,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -321,8 +375,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -337,7 +391,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -351,8 +406,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -367,7 +422,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -381,8 +437,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -397,7 +453,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                         <li class="portfolio__item">
                             <div class="portfolio__image">
@@ -411,8 +468,8 @@
                                     <source srcset="
                                         ./src/images/pattern-326.jpg 1x
                                       " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                    <img srcset="./src/images/pattern-300.jpg 1x"
-                                      src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
+                                    <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                        alt="Just an art" width="300" />
                                 </picture>
                             </div>
                             <h3 class="portfolio__title">Mi portal U</h3>
@@ -427,7 +484,8 @@
                                     JavaScript
                                 </p>
                             </div>
-                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
+                            <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                community</a>
                         </li>
                     </ul>
                 </div>
@@ -435,545 +493,609 @@
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                      </div>
+                    </div>
                 </div>
                 <div class="portfolio__mobile">
                     <div class="swiper">
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
-                          <!-- Slides -->
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                            <!-- Slides -->
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
-                          <div class="swiper-slide">
-                            <ul class="portfolio__list">
-                                <li class="portfolio__item">
-                                    <div class="portfolio__image">
-                                        <picture>
-                                            <source srcset="
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide">
+                                <ul class="portfolio__list">
+                                    <li class="portfolio__item">
+                                        <div class="portfolio__image">
+                                            <picture>
+                                                <source srcset="
                                                 ./src/images/pattern-300.jpg 1x
-                                              " media="(min-width: 1538px)" sizes="300px" width="300" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1538px)" sizes="300px" width="300"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-357.jpg 1x
-                                              " media="(min-width: 1024px)" sizes="357px" width="357" type="image/jpg" />
-                                            <source srcset="
+                                              " media="(min-width: 1024px)" sizes="357px" width="357"
+                                                    type="image/jpg" />
+                                                <source srcset="
                                                 ./src/images/pattern-326.jpg 1x
-                                              " media="(max-width: 1023px)" sizes="326px" width="326" type="image/jpg" />
-                                            <img srcset="./src/images/pattern-300.jpg 1x"
-                                              src="./src/images/pattern-300.jpg" alt="Just an art" width="300"/>
-                                        </picture>
-                                    </div>
-                                    <h3 class="portfolio__title">Mi portal U</h3>
-                                    <div class="portfolio__tags">
-                                        <p class="portfolio__tag">
-                                            UX Design
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            University
-                                        </p>
-                                        <p class="portfolio__tag">
-                                            JavaScript
-                                        </p>
-                                    </div>
-                                    <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma community</a>
-                                </li>
-                            </ul>
-                          </div>
+                                              " media="(max-width: 1023px)" sizes="326px" width="326"
+                                                    type="image/jpg" />
+                                                <img srcset="./src/images/pattern-300.jpg 1x"
+                                                    src="./src/images/pattern-300.jpg" alt="Just an art" width="300" />
+                                            </picture>
+                                        </div>
+                                        <h3 class="portfolio__title">Mi portal U</h3>
+                                        <div class="portfolio__tags">
+                                            <p class="portfolio__tag">
+                                                UX Design
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                University
+                                            </p>
+                                            <p class="portfolio__tag">
+                                                JavaScript
+                                            </p>
+                                        </div>
+                                        <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                            community</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                         <div class="swiper-pagination"></div>
-                      </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section id="skills-section" class="skills">
+        <section class="skills">
             <div class="container-top skills__container">
-                <h2 class="skills__header">Skills</h2>
+                <h2 id="skills-title" class="skills__header">Skills</h2>
                 <ul class="skills__list">
                     <li class="skills__item">
                         <div id="circle" class="skills__progress-bar">
@@ -1043,11 +1165,11 @@
                 </div>
             </div>
         </section>
-        <section id="about-me-section" class="about-me">
+        <section class="about-me">
             <div class="about-me__container container-top">
                 <div class="about-me__part">
                     <div class="about-me__info info--no-align-items">
-                        <h2 class="about-me__header">
+                        <h2 id="about-me-title" class="about-me__header">
                             About me
                             <svg class="about-me__zig-zag">
                                 <use href="src/images/svg/icons.svg#icon-zig-zag-main">
@@ -1071,8 +1193,8 @@
                         <source srcset="
                             ./src/images/baby-386.jpg 1x
                           " media="(max-width: 1023px)" sizes="386px" width="386" height="448" type="image/jpg" />
-                        <img srcset="./src/images/baby-746.jpg 1x"
-                          src="./src/images/baby-746.jpg" alt="Cristian David in infancy" width="745" height="530" />
+                        <img srcset="./src/images/baby-746.jpg 1x" src="./src/images/baby-746.jpg"
+                            alt="Cristian David in infancy" width="745" height="530" />
                     </picture>
                 </div>
                 <div class="about-me__part">
@@ -1094,8 +1216,8 @@
                         <source srcset="
                             ./src/images/child-386.jpg 1x
                           " media="(max-width: 1023px)" sizes="386px" width="386" height="467" type="image/jpg" />
-                        <img srcset="./src/images/child-794.jpg 1x"
-                          src="./src/images/child-794.jpg" alt="Young Cristian David" width="794"/>
+                        <img srcset="./src/images/child-794.jpg 1x" src="./src/images/child-794.jpg"
+                            alt="Young Cristian David" width="794" />
                     </picture>
                 </div>
                 <div class="about-me__part">
@@ -1117,8 +1239,8 @@
                         <source srcset="
                             ./src/images/teenager-386.jpg 1x
                           " media="(max-width: 1023px)" sizes="386px" width="386" height="422" type="image/jpg" />
-                        <img srcset="./src/images/teenager-748.jpg 1x"
-                          src="./src/images/teenager-748.jpg" alt="Young Cristian David" width="745"/>
+                        <img srcset="./src/images/teenager-748.jpg 1x" src="./src/images/teenager-748.jpg"
+                            alt="Young Cristian David" width="745" />
                     </picture>
                 </div>
             </div>
@@ -1135,8 +1257,8 @@
                         <source srcset="
                             ./src/images/art-footer-135.png 1x
                           " media="(max-width: 1023px)" sizes="135px" width="135" type="image/png" />
-                        <img srcset="./src/images/art-footer-281.png 1x"
-                          src="./src/images/art-footer-281.png" alt="Just an art" width="745"/>
+                        <img srcset="./src/images/art-footer-281.png 1x" src="./src/images/art-footer-281.png"
+                            alt="Just an art" width="745" />
                     </picture>
                 </div>
                 <div class="footer__text-block">
@@ -1157,10 +1279,10 @@
                     <span class="logo__text footer-text"> tian </span>
                 </a>
                 <ul class="footer__navigation">
-                    <li class="footer__item"><a href="#home-section" class="footer__nav-link">Home</a></li>
-                    <li class="footer__item"><a href="#portfolio-section" class="footer__nav-link">Portfolio</a></li>
-                    <li class="footer__item"><a href="#skills-section" class="footer__nav-link">Skills</a></li>
-                    <li class="footer__item"><a href="#about-me-section" class="footer__nav-link">About Me</a></li>
+                    <li class="footer__item"><a href="#home-title" class="footer__nav-link">Home</a></li>
+                    <li class="footer__item"><a href="#portfolio-title" class="footer__nav-link">Portfolio</a></li>
+                    <li class="footer__item"><a href="#skills-title" class="footer__nav-link">Skills</a></li>
+                    <li class="footer__item"><a href="#about-me-title" class="footer__nav-link">About Me</a></li>
                 </ul>
             </div>
         </div>
@@ -1168,43 +1290,43 @@
 
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-          <button type="button" class="modal__button" data-modal-close> <svg class="modal__icon">
-              <use href="./src/images/svg/icons.svg#icon-close"></use>
-            </svg></button>
-          <p class="modal__title">Contact Me</p>
-          <form id="form" class="form">
-            <div class="form__contacts">
-              <div class="form__contact">
-                <label for="name" class="form__label">Name</label>
-                <input id="name" name="name" class="form__input" type="text" required placeholder="">
-                <svg class="form__icon">
-                  <use href="./src/images/svg/icons.svg#icon-person"></use>
-                </svg>
-              </div>
-              <div class="form__contact">
-                <label for="phone" class="form__label">Phone Number</label>
-                <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
-                <svg class="form__icon">
-                  <use href="./src/images/svg/icons.svg#icon-phone-mod"></use>
-                </svg>
-              </div>
-              <div class="form__contact">
-                <label for="email" class="form__label">Email Address</label>
-                <input id="email" name="email" class="form__input" type="email" required placeholder="">
-                <svg class="form__icon">
-                  <use href="./src/images/svg/icons.svg#icon-mail"></use>
-                </svg>
-              </div>
-              <div class="form__contact">
-                <label for="comment" class="form__label">Message</label>
-                <textarea id="comment" name="comment" id="text" placeholder="Enter your message"
-                  class="form__textarea"></textarea>
-              </div>
-              <input type="submit" class="form__send" value="Send"></input>
-            </div>
-          </form>
+            <button type="button" class="modal__button" data-modal-close> <svg class="modal__icon">
+                    <use href="./src/images/svg/icons.svg#icon-close"></use>
+                </svg></button>
+            <p class="modal__title">Contact Me</p>
+            <form id="form" class="form">
+                <div class="form__contacts">
+                    <div class="form__contact">
+                        <label for="name" class="form__label">Name</label>
+                        <input id="name" name="name" class="form__input" type="text" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="phone" class="form__label">Phone Number</label>
+                        <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-phone-mod"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input id="email" name="email" class="form__input" type="email" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="comment" class="form__label">Message</label>
+                        <textarea id="comment" name="comment" id="text" placeholder="Enter your message"
+                            class="form__textarea"></textarea>
+                    </div>
+                    <input type="submit" class="form__send" value="Send"></input>
+                </div>
+            </form>
         </div>
-      </div>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
@@ -1212,7 +1334,7 @@
 
     <!-- <script src="src/js/circle-progress.min.js"></script>
     <script src="src/js/counter.min.js"></script> -->
-    
+
     <script src="src/js/scripts.min.js"></script>
 </body>
 

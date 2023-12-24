@@ -16,6 +16,7 @@ function scripts() {
         'src/js/modal.js',
         'src/js/form.js',
         'src/js/swipe-portfolio.js',
+        'src/js/mobile.js',
         '!src/js/scripts.min.js',
     ])
         .pipe(concat('scripts.min.js'))
