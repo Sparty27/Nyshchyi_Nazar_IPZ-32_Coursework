@@ -138,11 +138,11 @@
                 </div>
             </div>
         </section>
-        <section id="stats-section" class="stats">
+        <section class="stats">
             <div class="container-top">
                 <div class="stats__container">
-                    <div class="stats__success">
-                        <p id="stats-percent" class="stats__value">90%</p>
+                    <div id="stats-section" class="stats__success">
+                        <p id="stats-percent" class="stats__value">0%</p>
                         <p class="stats__description">Job Success
                             Score on Upwork</p>
                     </div>
@@ -150,15 +150,15 @@
                         <use href="src/images/svg/icons.svg#icon-dawn"></use>
                     </svg>
                     <div class="stats__figma-community">
-                        <p id="stats-number" class="stats__value">>25.000</p>
+                        <p id="stats-number" class="stats__value">>0</p>
                         <p class="stats__description">Duplicates on Figma
                             Community</p>
                     </div>
                     <svg class="stats__icon">
                         <use href="src/images/svg/icons.svg#icon-dawn"></use>
                     </svg>
-                    <div class="stats__finished-works">
-                        <p id="stats-works" class="stats__value">>2K</p>
+                    <div id="stats-section" class="stats__finished-works">
+                        <p id="stats-works" class="stats__value">>0K</p>
                         <p class="stats__description">In Finished
                             Works</p>
                     </div>
@@ -623,13 +623,13 @@
                   <use href="./src/images/svg/icons.svg#icon-person"></use>
                 </svg>
               </div>
-              <!-- <div class="form__contact">
+              <div class="form__contact">
                 <label for="phone" class="form__label">Phone Number</label>
                 <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
                 <svg class="form__icon">
-                  <use href="./images/icons.svg#icon-phone-mod"></use>
+                  <use href="./src/images/svg/icons.svg#icon-phone-mod"></use>
                 </svg>
-              </div> -->
+              </div>
               <div class="form__contact">
                 <label for="email" class="form__label">Email Address</label>
                 <input id="email" name="email" class="form__input" type="email" required placeholder="">
@@ -653,7 +653,7 @@
                 </span> Погоджуюся з розсилкою та приймаю <a href="#" class="form__link"> Умови договору</a>
                 </label>
               </div> -->
-              <input type="submit" class="form__send" value="Send"></input>
+              <input id="send-button" type="submit" class="form__send" value="Send"></input>
             </div>
           </form>
         </div>
@@ -670,6 +670,32 @@
     <script src="src/js/stats-animation.js"></script>
     <script src="src/js/toggle-theme.js"></script> -->
     <script src="src/js/scripts.min.js"></script>
+    <script>
+        function sendMessage() {
+            name = document.getElementById('name').value;
+            phone = document.getElementById('phone').value;
+            email = document.getElementById('email').value;
+            comment = document.getElementById('comment').value;
+
+            var text = `Name: ${name}%0APhone: ${phone}%0AEmail: ${email}%0AComment: ${comment}`;
+            console.log(text);
+
+            var token = '6372861588:AAEGaipFu1vG46sPuhaTzTjVkXPc5uqkwsg';
+            console.log(token);
+            var chat_id = '721323636';
+
+            var url = 'https://api.telegram.org/bot' + token + '/sendMessage?chat_id=' + chat_id + '&text=' + text + '&parse_mode=html';
+            console.log(url);
+
+
+            let api = new XMLHttpRequest();
+            api.open("GET", url, true);
+            api.send();
+        }
+
+        button = document.getElementById('send-button');
+        button.addEventListener('click', sendMessage);
+    </script>
     <!-- <script src="src/js/modal.js"></script> -->
 </body>
 
