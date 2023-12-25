@@ -195,7 +195,7 @@
         }
     }
 
-    &__nav-link {
+    &__nav-button {
         font-family: Montserrat;
         font-size: 20px;
         font-style: normal;
@@ -211,7 +211,7 @@
         &:hover,
         &:focus {
             transition: color 0.3s;
-            color: var(--navigation-dark-button-focus);
+            color: #a87ff3;
         }
     }
 }

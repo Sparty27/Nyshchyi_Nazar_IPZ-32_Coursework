@@ -140,10 +140,6 @@
   flex-wrap: wrap;
 }
 
-.mobile__contacts-link {
-  font-size: 24px;
-}
-
 .mobile__contacts-item:not(:last-child) {
   margin-bottom: 32px;
 }
@@ -152,7 +148,6 @@
   font-weight: 500;
   font-size: 40px;
   letter-spacing: 0.8px;
-  color: getColor(primary-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -178,10 +173,11 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 24px;
 
   &:hover,
   &:focus {
-    color: getColor(accent-color);
+    color: #a87ff3;
   }
 }
 

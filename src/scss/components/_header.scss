@@ -63,8 +63,7 @@
         &:hover,
         &:focus {
             transition: color, box-shadow 0.3s;
-            color: var(--navigation-dark-button-focus);
-            text-shadow: 1px 1px 1px rgba(97, 91, 27,0.5);
+            color: #a87ff3;
         }
     }
 

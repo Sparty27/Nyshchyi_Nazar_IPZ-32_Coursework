@@ -13,6 +13,10 @@
             mobileMenuRef.classList.toggle('is-open');
         });
     });
+    let closeModalBtn = document.querySelector('[data-modal-close]');
+    closeModalBtn.addEventListener('click', () => {
+    })
+
 
     let sections = document.querySelectorAll('.mobile__nav-item');
     sections.forEach(e => {
@@ -21,7 +25,6 @@
             menuOpenBtn.classList.toggle('is-open');
             menuOpenBtn.setAttribute('aria-expanded', !expanded);
             mobileMenuRef.classList.toggle('is-open');
-            body.classList.toggle('no-scroll');
         });
     });
 
@@ -32,7 +35,6 @@
         menuOpenBtn.classList.toggle('is-open');
         menuOpenBtn.setAttribute('aria-expanded', !expanded);
         mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
     });
     menuCloseBtn.addEventListener('click', () => {
         const expanded = menuOpenBtn.getAttribute('aria-expanded') === 'true' || false;
@@ -40,6 +42,5 @@
         menuOpenBtn.classList.toggle('is-open');
         menuOpenBtn.setAttribute('aria-expanded', !expanded);
         mobileMenuRef.classList.toggle('is-open');
-        body.classList.toggle('no-scroll');
     });
 })();
