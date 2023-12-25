@@ -6,23 +6,11 @@ body {
     line-height: normal;
     font-size: 14px;
     font-weight: 400;
-    // font-family: 'Montserrat', sans-serif;
-    // line-height: 1;
-    // font-weight: 400;
-    // font-size: 20px;
-    // letter-spacing: -1px;
 
     @include match(mobile) {
         overflow-x: hidden;
     }
 }
-
-
-.no-scroll {
-    overflow: hidden;
-}
-
-
 
 .dark-theme {
     --background-primary-color: #FFFFFF;
@@ -40,4 +28,20 @@ body {
     --thanks-background-color: #A87FF3;
     --social-border-color: #E6E6E6;
     --hero-link: #FFEC70;
+}
+
+.container-top {
+    margin: 0 auto;
+
+    @media screen and (min-width: 430px) {
+        max-width: 430px;
+    }
+
+    @media screen and (min-width: 1024px) {
+        max-width: 1024px;
+    }
+
+    @media screen and (min-width: 1538px) {
+        max-width: 1538px;  
+    }
 }

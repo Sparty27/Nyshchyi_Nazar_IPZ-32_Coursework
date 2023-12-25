@@ -14,24 +14,8 @@ h1, h2, h3, p, ul, li {
     list-style-type: none;
 }
 
-.container-top {
-    margin: 0 auto;
-
-    @media screen and (min-width: 430px) {
-        max-width: 430px;
-    }
-
-    @media screen and (min-width: 1024px) {
-        max-width: 1024px;
-    }
-
-    @media screen and (min-width: 1538px) {
-        max-width: 1538px;  
-    }
-}
-
 img {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+}

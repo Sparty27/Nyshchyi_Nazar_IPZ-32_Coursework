@@ -89,6 +89,8 @@
         position: relative;
         display: flex;
         justify-content: space-around;
+        min-width: 220px;
+        min-height: 220px;
 
         @include match(mobile) {
             min-width: 220px;

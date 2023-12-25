@@ -5,14 +5,14 @@
     const body = document.querySelector('body');
 
     let openModalBtns = document.querySelectorAll('[data-modal-open]');
-    openModalBtns.forEach(e => {
-        e.addEventListener('click', () => {
-            const expanded = menuOpenBtn.getAttribute('aria-expanded') === 'true' || false;
-            menuOpenBtn.classList.toggle('is-open');
-            menuOpenBtn.setAttribute('aria-expanded', !expanded);
-            mobileMenuRef.classList.toggle('is-open');
-        });
+    openModalBtns[1].addEventListener('click', () => {
+        const expanded = menuOpenBtn.getAttribute('aria-expanded') === 'true' || false;
+        menuOpenBtn.classList.toggle('is-open');
+        menuOpenBtn.setAttribute('aria-expanded', !expanded);
+        mobileMenuRef.classList.toggle('is-open');
     });
+
+    console.log(openModalBtns);
     let closeModalBtn = document.querySelector('[data-modal-close]');
     closeModalBtn.addEventListener('click', () => {
     })
