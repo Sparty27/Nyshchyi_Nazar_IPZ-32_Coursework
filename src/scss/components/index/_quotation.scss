@@ -2,10 +2,6 @@
     padding-top: 97px;
     padding-bottom: 97px;
 
-
-    
-    @include match(mobile) {
-    }
     @include match(tablet) {
         padding-top: 171px;
         padding-bottom: 171px;
@@ -45,22 +41,16 @@
         color: white;
 
         @include match(mobile) {
-            font-family: Poppins;
             font-size: 24px;
-            line-height: 105%; /* 25.2px */
             letter-spacing: -1.2px;
         }
         @include match(tablet) {
-            font-family: Poppins;
             font-size: 40px;
-            line-height: 105%; /* 42px */
             letter-spacing: -2px;
         }
         @include match(desktop) {
             text-align: start;
-            font-family: Poppins;
             font-size: 48px;
-            line-height: 105%; /* 50.4px */
             letter-spacing: -2.4px;
         }
     }
@@ -80,32 +70,18 @@
         color: white;
 
         @include match(mobile) {
-            text-align: center;
-            font-family: Poppins;
             font-size: 24px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 105%; /* 25.2px */
             letter-spacing: -1.2px;
         }
         @include match(tablet) {
-            text-align: center;
-            font-family: Poppins;
             font-size: 40px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 105%; /* 42px */
             letter-spacing: -2px;
         }
         @include match(desktop) {
             padding-left: 218.5px;
             padding-right: 218.5px;
             text-align: start;
-            font-family: Poppins;
             font-size: 48px;
-            font-style: italic;
-            font-weight: 700;
-            line-height: 105%; /* 50.4px */
             letter-spacing: -2.4px;
         }
     }

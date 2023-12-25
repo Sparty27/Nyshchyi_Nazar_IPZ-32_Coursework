@@ -1,12 +1,8 @@
 .portfolio {
     padding-top: 150px;
 
-    @include match(mobile) {
-    }
     @include match(tablet) {
         padding-top: 200px;
-    }
-    @include match(desktop) {
     }
 
     &__container {
@@ -62,10 +58,6 @@
         display: flex;
         flex-wrap: wrap;
 
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
         @include match(desktop) {
             display: flex;
             gap: 30px;

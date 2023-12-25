@@ -30,20 +30,12 @@
         }
     }
 
-
-    &__navigation {
-    }
-
     &__nav-list {
         gap: 30px;
         display: none;
 
-        @include match(mobile) {
-        }
         @include match(tablet) {
             display: flex;
-        }
-        @include match(desktop) {
         }
     }
 
@@ -54,8 +46,6 @@
         font-weight: 400;
         line-height: 100%; /* 20px */
         letter-spacing: 0px;
-
-
     }
 
     &__nav-button {

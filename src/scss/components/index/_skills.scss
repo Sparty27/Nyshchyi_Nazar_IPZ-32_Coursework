@@ -2,14 +2,10 @@
     padding-bottom: 140px;
     padding-top: 140px;
 
-    @include match(mobile) {
-    }
     @include match(tablet) {
         padding-top: 200px;
         padding-bottom: 200px;
 
-    }
-    @include match(desktop) {
     }
 
     &__container {
@@ -42,17 +38,10 @@
         display: flex;
         flex-wrap: wrap;
 
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
         @include match(desktop) {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
         }
-    }
-
-    &__info {
     }
 
     &__item {
@@ -138,8 +127,6 @@
             margin-top: 0px;
             text-align: start;
         }
-        @include match(desktop) {
-        }
     }
 
     &__description {
@@ -154,12 +141,8 @@
         text-align: center;
 
 
-        @include match(mobile) {
-        }
         @include match(tablet) {
             text-align: start;
-        }
-        @include match(desktop) {
         }
     }
 }

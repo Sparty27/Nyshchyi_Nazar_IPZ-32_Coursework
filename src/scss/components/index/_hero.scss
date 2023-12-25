@@ -24,10 +24,6 @@
     &__info {
         padding-top: 0px;
 
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
         @include match(desktop) {
             padding-top: 41.5px;
         }
@@ -42,10 +38,6 @@
         margin-right: 25px;
         display: none;
 
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
         @include match(desktop) {
             display: flex;
         }
@@ -79,8 +71,6 @@
             text-transform: uppercase;
             width: 660px;
         }
-        @include match(desktop) {
-        }
     }
 
     &__text {
@@ -99,27 +89,18 @@
         @include match(mobile) {
             padding-top: 10px;
             font-size: 64px;
-            line-height: 90%; /* 57.6px */
             letter-spacing: -2.1px;
         }
         @include match(tablet) {
             padding-top: 25px;
             font-size: 114px;
-            line-height: 90%; /* 102.6px */
             letter-spacing: -3.42px;
-        }
-        @include match(desktop) {
         }
     }
 
     &__image {
         display: none;
 
-
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
         @include match(desktop) {
             display: flex;
         }
@@ -152,14 +133,10 @@
             --background-primary-color: var(--hero-link);
         }
 
-        @include match(mobile) {
-        }
         @include match(tablet) {
             width: 52px;
             height: 52px;
             border-radius: 10px;
-        }
-        @include match(desktop) {
         }
     }
 
@@ -167,8 +144,6 @@
         width: 30.7px;
         height: 30.7px;
 
-        @include match(mobile) {
-        }
         @include match(tablet) {
             width: 40px;
             height: 40px;
@@ -180,14 +155,10 @@
         width: 40px;
         height: 40px;
 
-        @include match(mobile) {
-        }
         @include match(tablet) {
             padding: 6px;
             width: 52px;
             height: 52px;
-        }
-        @include match(desktop) {
         }
 
         &:focus{

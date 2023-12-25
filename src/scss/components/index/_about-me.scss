@@ -2,8 +2,6 @@
     padding-top: 140px;
     padding-bottom: 160px;
 
-    @include match(mobile) {
-    }
     @include match(tablet) {
         padding-top: 200px;
         padding-bottom: 279px;
@@ -15,8 +13,7 @@
     &__container {
         padding-left: 22px;
         padding-right: 22px;
-        @include match(mobile) {
-        }
+
         @include match(tablet) {
             padding-left: 80px;
             padding-right: 80px;
@@ -54,15 +51,12 @@
                 text-align: start;
             }
         }
-
         
         @include match(mobile) {
             display: block;
         }
         @include match(tablet) {
             display: flex;
-        }
-        @include match(desktop) {
         }
     }
 
@@ -95,10 +89,6 @@
         align-items: none;
     }
 
-    // &__picture {
-    //     max-height: 530px;
-    // }
-
     img {
         height: 100%;
     }
@@ -119,30 +109,19 @@
         @include match(mobile) {
             margin-top: 50px;
             margin-bottom: 50px;
-            font-family: Montserrat;
             font-size: 20px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%; /* 22px */
             letter-spacing: -0.5px;
             max-width: 372.8px;
         }
         @include match(tablet) {
             font-size: 28px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%; /* 28px */
             letter-spacing: -1px;
         }
         @include match(desktop) {
             margin-top: 76px;
             margin-bottom: 0px;
             max-width: 665px;
-            font-family: Montserrat;
             font-size: 36px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%; /* 36px */
             letter-spacing: -1.8px;
         }
     }
@@ -161,20 +140,13 @@
 
         
         @include match(mobile) {
-            font-weight: 700;
             font-size: 22px;
-            line-height: 100%;
         }
         @include match(tablet) {
-            font-weight: 700;
             font-size: 28px;
-            line-height: 100%;
         }
         @include match(desktop) {
-            font-weight: 700;
             font-size: 36px;
-            font-weight: 700;
-            line-height: 100%;
             letter-spacing: -1.8px;
         }
     }
@@ -193,20 +165,13 @@
 
         
         @include match(mobile) {
-            font-weight: 700;
             font-size: 22px;
-            line-height: 100%;
         }
         @include match(tablet) {
-            font-weight: 700;
             font-size: 28px;
-            line-height: 100%;
         }
         @include match(desktop) {
-            font-weight: 700;
             font-size: 36px;
-            font-weight: 700;
-            line-height: 100%;
             letter-spacing: -1.8px;
         }
     }
@@ -225,19 +190,13 @@
 
         
         @include match(mobile) {
-            font-weight: 700;
             font-size: 20px;
-            line-height: 100%;
         }
         @include match(tablet) {
-            font-weight: 700;
             font-size: 28px;
-            line-height: 100%;
         }
         @include match(desktop) {
             font-size: 36px;
-            font-weight: 700;
-            line-height: 100%;
             letter-spacing: -1.8px;
         }
     }
@@ -257,19 +216,13 @@
 
         
         @include match(mobile) {
-            font-weight: 700;
             font-size: 20px;
-            line-height: 100%;
         }
         @include match(tablet) {
-            font-weight: 700;
             font-size: 28px;
-            line-height: 100%;
         }
         @include match(desktop) {
             font-size: 36px;
-            font-weight: 700;
-            line-height: 100%;
             letter-spacing: -1.8px;
         }
     }

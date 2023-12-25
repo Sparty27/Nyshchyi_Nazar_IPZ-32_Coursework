@@ -169,7 +169,6 @@
   font-weight: 500;
   font-size: 24px;
   letter-spacing: 0.48px;
-  color: getColor(secondary-color);
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -179,13 +178,6 @@
   &:focus {
     color: #a87ff3;
   }
-}
-
-.mobile__contacts-link--blue {
-  font-size: 34px;
-  font-weight: 500;
-  letter-spacing: 0.68px;
-  color: getColor(accent-color);
 }
 
 .mobile__social-list {

@@ -14,8 +14,6 @@
         position: relative;
         padding-left: 22px;
         padding-right: 22px;
-        @include match(mobile) {
-        }
         @include match(tablet) {
             padding-left: 80px;
             padding-right: 80px;
@@ -38,8 +36,6 @@
         @include match(tablet) {
             top: -217px;
             left: -33px;
-        }
-        @include match(desktop) {
         }
     }
 
@@ -123,26 +119,16 @@
         
         @include match(mobile) {
             font-size: 12px;
-            font-style: normal;
-            font-weight: 300;
-            line-height: 100%; /* 12px */
             letter-spacing: -0.6px;
-            text-transform: capitalize;
         }
         @include match(tablet) {
             text-transform: none;
             font-size: 22px;
-            font-style: normal;
             font-weight: 700;
-            line-height: 100%; /* 22px */
             letter-spacing: -1.1px;
         }
         @include match(desktop) {
-            text-transform: none;
             font-size: 21px;
-            font-style: normal;
-            font-weight: 700;
-            line-height: 100%; /* 22px */
             letter-spacing: -1.1px;
             color: white;
         }
@@ -162,19 +148,11 @@
             padding-top: 146px;
             display: flex;
         }
-        @include match(desktop) {
-        }
     }
 
     &__logo {
         width: 60px;
         height: 60px;
-        @include match(mobile) {
-        }
-        @include match(tablet) {
-        }
-        @include match(desktop) {
-        }
     }
 
     &__navigation {
@@ -190,8 +168,6 @@
         }
         @include match(tablet) {
             margin-top: 0px;
-        }
-        @include match(desktop) {
         }
     }
 

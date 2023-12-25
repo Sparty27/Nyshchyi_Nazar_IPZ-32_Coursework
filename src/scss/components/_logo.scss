@@ -4,12 +4,8 @@
     gap: 5px;
     justify-content: center;
 
-    @include match(mobile) {
-    }
     @include match(tablet) {
         justify-content: start;
-    }
-    @include match(desktop) {
     }
 
     &__text {
