@@ -2,7 +2,7 @@
     padding-top: 90px;
 
     @include match(tablet) {
-        padding-top: 236px;
+        padding-top: 150px;
     }
     @include match(desktop) {
         padding-top: 150px;
@@ -31,8 +31,6 @@
         @include match(tablet) {
             justify-content: space-between;
             display: flex;
-            margin-left: 80px;
-            margin-right: 80px;
             padding-left: 50px;
             padding-right: 50px;
         }

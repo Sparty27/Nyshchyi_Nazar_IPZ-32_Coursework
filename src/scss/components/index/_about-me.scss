@@ -64,8 +64,8 @@
             display: none;
         }
         @include match(tablet) {
-            width: 199.742px;
-            height: 23.449px;
+            width: 125px;
+            height: 14px;
             display: block;
         }
         @include match(desktop) {
@@ -104,12 +104,14 @@
         @include match(mobile) {
             margin-top: 50px;
             margin-bottom: 50px;
-            font-size: 20px;
+            font-size: 24px;
             letter-spacing: -0.5px;
             max-width: 372.8px;
         }
         @include match(tablet) {
-            font-size: 28px;
+            margin-bottom: 0px;
+            max-width: 330px;
+            font-size: 24px;
             letter-spacing: -1px;
         }
         @include match(desktop) {
@@ -138,7 +140,7 @@
             font-size: 22px;
         }
         @include match(tablet) {
-            font-size: 28px;
+            font-size: 24px;
         }
         @include match(desktop) {
             font-size: 30px;
@@ -163,7 +165,7 @@
             font-size: 22px;
         }
         @include match(tablet) {
-            font-size: 28px;
+            font-size: 24px;
         }
         @include match(desktop) {
             font-size: 30px;
@@ -185,10 +187,10 @@
 
         
         @include match(mobile) {
-            font-size: 20px;
+            font-size: 22px;
         }
         @include match(tablet) {
-            font-size: 28px;
+            font-size: 24px;
         }
         @include match(desktop) {
             font-size: 30px;
@@ -211,10 +213,10 @@
 
         
         @include match(mobile) {
-            font-size: 20px;
+            font-size: 22px;
         }
         @include match(tablet) {
-            font-size: 28px;
+            font-size: 24px;
         }
         @include match(desktop) {
             font-size: 30px;

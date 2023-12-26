@@ -74,7 +74,7 @@
             letter-spacing: -1.2px;
         }
         @include match(tablet) {
-            font-size: 40px;
+            font-size: 32px;
             letter-spacing: -2px;
         }
         @include match(desktop) {

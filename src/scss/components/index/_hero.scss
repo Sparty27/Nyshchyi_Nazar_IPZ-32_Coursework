@@ -90,6 +90,11 @@
             letter-spacing: -2.1px;
         }
         @include match(tablet) {
+            padding-top: 22px;
+            font-size: 114px;
+            letter-spacing: -3.42px;
+        }
+        @include match(desktop) {
             padding-top: 19px;
             font-size: 97px;
             letter-spacing: -3.42px;

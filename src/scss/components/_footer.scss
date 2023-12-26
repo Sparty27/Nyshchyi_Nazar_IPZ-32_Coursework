@@ -29,6 +29,10 @@
             left: -10px;
         }
         @include match(tablet) {
+            top: -217px;
+            left: -33px;
+        }
+        @include match(desktop) {
             top: -195px;
             left: -33px;
         }
@@ -57,9 +61,10 @@
         }
         @include match(tablet) {
             top: -85px;
-            padding: 46px 88px 46px 298px;
+            padding: 46px 88px 46px 250px;
             height: 180px;
             max-width: 864px;
+            width: 738px;
         }
         @include match(desktop) {
             max-width: 1538px;
@@ -93,7 +98,7 @@
         @include match(tablet) {
             width: 150px;
             height: 125px;
-            left: 714px;
+            left: 588px;
             display: block;
 
         }
