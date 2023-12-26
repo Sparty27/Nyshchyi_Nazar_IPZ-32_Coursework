@@ -1,20 +1,13 @@
 .hero {
     padding-top: 60px;
-    padding-left: 5px;
 
     &__container {
         display: flex;
         justify-content: space-around;
-        padding-left: 16px;
-        padding-right: 16px;
 
         @include match(mobile) {
-            padding-left: 32px;
-            padding-right: 32px;
         }
         @include match(tablet) {
-            padding-left: 0px;
-            padding-right: 0px;
         }
         @include match(desktop) {
             justify-content: space-between;
@@ -25,7 +18,7 @@
         padding-top: 0px;
 
         @include match(desktop) {
-            padding-top: 41.5px;
+            padding-top: 30px;
         }
     }
 
@@ -34,8 +27,8 @@
     }
 
     &__portal-container {
-        padding-top: 41.5px;
-        margin-right: 25px;
+        padding-top: 30px;
+        margin-right: 10px;
         display: none;
 
         @include match(desktop) {
@@ -44,8 +37,8 @@
     }
 
     &__portal-icon {
-        width: 160px;
-        height: 160px;
+        width: 130px;
+        height: 130px;
     }
 
     &__header {
@@ -71,6 +64,11 @@
             text-transform: uppercase;
             width: 660px;
         }
+        @include match(desktop) {
+            width: 550px;
+            font-size: 170px;
+
+        }
     }
 
     &__text {
@@ -92,8 +90,8 @@
             letter-spacing: -2.1px;
         }
         @include match(tablet) {
-            padding-top: 25px;
-            font-size: 114px;
+            padding-top: 19px;
+            font-size: 97px;
             letter-spacing: -3.42px;
         }
     }
@@ -107,7 +105,7 @@
     }
 
     &__socials {
-        margin-top: 70px;
+        margin-top: 40px;
     }
 
     &__social-list {
@@ -167,7 +165,7 @@
     }
 
     &__download-button {
-        margin-top: 40px;
+        margin-top: 30px;
         font-family: Montserrat;
         font-size: 20px;
         font-style: normal;

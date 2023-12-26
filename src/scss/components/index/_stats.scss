@@ -5,11 +5,9 @@
         padding-top: 236px;
     }
     @include match(desktop) {
-        padding-top: 153px;
+        padding-top: 150px;
     }
 
-    padding-left: 5px;
-    padding-right: 5px;
 
     &__list {
         background-color: var(--secondary-background-color);
@@ -101,9 +99,9 @@
             font-size: 64px;
         }
         @include match(desktop) {
-            font-size: 128px;
+            font-size: 100px;
             display: flex;
-            justify-content: left;
+            justify-content: space-around;
         }
     }
 
@@ -124,7 +122,7 @@
             text-align: center;
         }
         @include match(desktop) {
-            font-size: 35px;
+            font-size: 30px;
             font-style: normal;
             font-weight: 700;
             line-height: 100%; /* 36px */
@@ -132,10 +130,10 @@
         }
     }
     &__icon {
-        width: 80px;
-        height: 80px;
-        min-width: 80px;
-        min-height: 80px;
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+        min-height: 70px;
 
         display: none;
 

@@ -4,13 +4,13 @@ let swiper = new Swiper('.swiper', {
     spaceBetween: 30,
 
     breakpoints: {
-        1024: {
+        768: {
             spaceBetween: 30,
             slidesPerView: 2,
             slidesPerGroup: 2,
         },
         
-        1538: {
+        1280: {
             spaceBetween: 30,
             slidesPerView: 4,
             slidesPerGroup: 4,

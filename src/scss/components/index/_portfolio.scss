@@ -2,20 +2,15 @@
     padding-top: 150px;
 
     @include match(tablet) {
-        padding-top: 200px;
+        padding-top: 150px;
     }
 
     &__container {
-        padding-left: 22px;
-        padding-right: 22px;
         @include match(mobile) {
         }
         @include match(tablet) {
-            padding-left: 80px;
-            padding-right: 80px;
         }
         @include match(desktop) {
-            padding: 0px;
         }
     }
 
@@ -110,7 +105,7 @@
 
     &__tag {
         font-family: Montserrat;
-        font-size: 14px;
+        font-size: 12px;
         font-style: normal;
         font-weight: 400;
         line-height: 100%; /* 14px */

@@ -1,7 +1,7 @@
 @mixin match($screen) {
     $mobile: 430px;
     $tablet: 1024px;
-    $desktop: 1538px;
+    $desktop: 1280px;
       
     @if $screen == mobile {
         @media screen and (min-width: $mobile) {

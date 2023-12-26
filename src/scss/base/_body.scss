@@ -8,7 +8,6 @@ body {
     font-weight: 400;
 
     @include match(mobile) {
-        overflow-x: hidden;
     }
 }
 
@@ -32,6 +31,8 @@ body {
 
 .container-top {
     margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
 
     @media screen and (min-width: 430px) {
         max-width: 430px;
@@ -41,7 +42,7 @@ body {
         max-width: 1024px;
     }
 
-    @media screen and (min-width: 1538px) {
-        max-width: 1538px;  
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;  
     }
 }

@@ -12,14 +12,9 @@
 
     &__container {
         position: relative;
-        padding-left: 22px;
-        padding-right: 22px;
         @include match(tablet) {
-            padding-left: 80px;
-            padding-right: 80px;
         }
         @include match(desktop) {
-            padding: 0px;
         }
     }
 
@@ -34,7 +29,7 @@
             left: -10px;
         }
         @include match(tablet) {
-            top: -217px;
+            top: -195px;
             left: -33px;
         }
     }
@@ -68,15 +63,15 @@
         }
         @include match(desktop) {
             max-width: 1538px;
-            width: 100%;
+            width: 1250px;
             top: -85px;
             position: absolute;
-            padding: 68px 219px 68px 298px;
+            padding: 68px 150px 68px 298px;
             background-color: var(--thanks-background-color);
             border-radius: 15px;
             display: flex;
             gap: 50px;
-            height: 180px;
+            height: auto;
         }
     }
 
@@ -103,7 +98,7 @@
 
         }
         @include match(desktop) {
-            left: 1388px;
+            left: 1100px;
         }
     }
 
@@ -128,7 +123,7 @@
             letter-spacing: -1.1px;
         }
         @include match(desktop) {
-            font-size: 21px;
+            font-size: 22px;
             letter-spacing: -1.1px;
             color: white;
         }
