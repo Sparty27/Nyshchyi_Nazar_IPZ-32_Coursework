@@ -1,0 +1,226 @@
+.about-me {
+    padding-top: 140px;
+    padding-bottom: 160px;
+
+    @include match(tablet) {
+        padding-top: 150px;
+        padding-bottom: 279px;
+    }
+    @include match(desktop) {
+        padding-bottom: 250px;
+    }
+
+    &__container {
+
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+        }
+    }
+
+    &__header {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 64px */
+        text-transform: uppercase;
+        color: var(--primary-color);
+        display: flex;
+        align-items: center;
+    }
+
+    &__part {
+        display: block;
+        justify-content: space-between;
+
+        &:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+
+        &:nth-child(even) .about-me__text{
+            @include match(tablet) {
+                text-align: end;
+            }
+            @include match(desktop) {
+                text-align: start;
+            }
+        }
+        
+        @include match(mobile) {
+            display: block;
+        }
+        @include match(tablet) {
+            display: flex;
+        }
+    }
+
+    &__zig-zag {
+        width: 266.742px;
+        height: 29.449px;
+        display: none;
+
+        @include match(mobile) {
+            display: none;
+        }
+        @include match(tablet) {
+            width: 125px;
+            height: 14px;
+            display: block;
+        }
+        @include match(desktop) {
+            width: 266.742px;
+            height: 29.449px;
+        }
+    }
+
+    &__info {
+        display: flex;
+        align-items: center;
+    }
+
+    .info--no-align-items{
+        display: block;
+        align-items: none;
+    }
+
+    img {
+        height: 100%;
+    }
+
+    &__text {
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        max-width: 665px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+
+        
+        @include match(mobile) {
+            margin-top: 50px;
+            margin-bottom: 50px;
+            font-size: 24px;
+            letter-spacing: -0.5px;
+            max-width: 372.8px;
+        }
+        @include match(tablet) {
+            margin-bottom: 0px;
+            max-width: 330px;
+            font-size: 24px;
+            letter-spacing: -1px;
+        }
+        @include match(desktop) {
+            margin-top: 76px;
+            margin-bottom: 0px;
+            max-width: 570px;
+            font-size: 30px;
+            letter-spacing: -1.8px;
+        }
+    }
+
+    .gradient__designer {
+        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 10%, #FEE140 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.1px;
+
+        
+        @include match(mobile) {
+            font-size: 22px;
+        }
+        @include match(tablet) {
+            font-size: 24px;
+        }
+        @include match(desktop) {
+            font-size: 30px;
+            letter-spacing: -1.8px;
+        }
+    }
+
+    .gradient__learning {
+        background: var(--Green_Blue, linear-gradient(90deg, #84FAB0 0%, #8FD3F4 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.1px;
+
+        
+        @include match(mobile) {
+            font-size: 22px;
+        }
+        @include match(tablet) {
+            font-size: 24px;
+        }
+        @include match(desktop) {
+            font-size: 30px;
+            letter-spacing: -1.8px;
+        }
+    }
+
+    .gradient__name {
+        background: var(--Blue_Purple, linear-gradient(90deg, #E0C3FC 0%, #8EC5FC 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.1px;
+
+        
+        @include match(mobile) {
+            font-size: 22px;
+        }
+        @include match(tablet) {
+            font-size: 24px;
+        }
+        @include match(desktop) {
+            font-size: 30px;
+            letter-spacing: -1.8px;
+        }
+    }
+
+    .gradient__colombian {
+        background: linear-gradient(90deg, #FFE76A 16.02%, #65C8FF 72.09%, #F00 1.1%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        
+        font-family: Montserrat;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        letter-spacing: -1.1px;
+
+        
+        @include match(mobile) {
+            font-size: 22px;
+        }
+        @include match(tablet) {
+            font-size: 24px;
+        }
+        @include match(desktop) {
+            font-size: 30px;
+            letter-spacing: -1.8px;
+        }
+    }
+}

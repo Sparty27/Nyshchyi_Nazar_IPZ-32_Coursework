@@ -1,0 +1,211 @@
+.hero {
+    padding-top: 60px;
+
+    &__container {
+        display: flex;
+        justify-content: space-around;
+
+        @include match(mobile) {
+        }
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+            justify-content: space-between;
+        }
+    }
+
+    &__info {
+        padding-top: 0px;
+
+        @include match(desktop) {
+            padding-top: 30px;
+        }
+    }
+
+    &__title {
+        display: flex;
+    }
+
+    &__portal-container {
+        padding-top: 30px;
+        margin-right: 10px;
+        display: none;
+
+        @include match(desktop) {
+            display: flex;
+        }
+    }
+
+    &__portal-icon {
+        width: 130px;
+        height: 130px;
+    }
+
+    &__header {
+        color: var(--primary-color);
+        font-family: Anton;
+        font-size: 90px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%; /* 180px */
+        letter-spacing: -3.3px;
+        text-transform: uppercase;
+        text-align: center;
+
+
+        @include match(mobile) {
+            font-size: 110px;
+            line-height: 90%; /* 99px */
+        }
+        @include match(tablet) {
+            text-align: start;
+            font-size: 200px;
+            letter-spacing: -6px;
+            text-transform: uppercase;
+            width: 660px;
+        }
+        @include match(desktop) {
+            width: 550px;
+            font-size: 170px;
+
+        }
+    }
+
+    &__text {
+        font-family: Anton;
+        font-style: normal;
+        font-weight: 400;
+        background: var(--Red_Orange, linear-gradient(90deg, #FA709A 0%, #FEE140 100%));
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-top: 10px;
+        font-size: 50px;
+        line-height: 90%; /* 57.6px */
+        letter-spacing: -2.1px;
+
+        @include match(mobile) {
+            padding-top: 10px;
+            font-size: 64px;
+            letter-spacing: -2.1px;
+        }
+        @include match(tablet) {
+            padding-top: 22px;
+            font-size: 114px;
+            letter-spacing: -3.42px;
+        }
+        @include match(desktop) {
+            padding-top: 19px;
+            font-size: 97px;
+            letter-spacing: -3.42px;
+        }
+    }
+
+    &__image {
+        display: none;
+
+        @include match(desktop) {
+            display: flex;
+        }
+    }
+
+    &__socials {
+        margin-top: 40px;
+    }
+
+    &__social-list {
+        display: flex;
+        justify-content: space-between;
+
+
+        @include match(mobile){
+            justify-content: space-between;
+        }
+    }
+
+    &__social-item {
+        border-radius: 7.692px;
+        border: 1px solid var(--social-border-color);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        &:hover{
+            background-color: var(--hero-link);
+            --background-primary-color: var(--hero-link);
+        }
+
+        @include match(tablet) {
+            width: 52px;
+            height: 52px;
+            border-radius: 10px;
+        }
+    }
+
+    &__icon {
+        width: 30.7px;
+        height: 30.7px;
+
+        @include match(tablet) {
+            width: 40px;
+            height: 40px;
+        }
+    }
+
+    &__social-link {
+        padding: 4.615px;
+        width: 40px;
+        height: 40px;
+
+        @include match(tablet) {
+            padding: 6px;
+            width: 52px;
+            height: 52px;
+        }
+
+        &:focus{
+            background-color: var(--hero-link);
+        }
+    }
+
+    &__download-button {
+        margin-top: 30px;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%;
+        letter-spacing: -1px;
+        color: white;
+        background-color: var(--download-color);
+        display: flex;
+        justify-content: space-between;
+        gap: 8px;
+        padding: 16px 0;
+        width: 100%;
+        box-sizing: border-box;
+        border-radius: 0;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover,
+        &:focus {
+            --contact-btn-color: #925FF0;
+            transition: background-color, 0.3s;
+            color: var(--contact-btn-color);
+            background-color: var(--theme-btn-dark);
+            fill: var(--contact-btn-color);
+        }
+    }
+    
+
+    &__download-icon {
+        fill: var(--primary-color);
+        stroke: var(--primary-color);
+        width: 20px;
+        height: 20px;
+    }
+}

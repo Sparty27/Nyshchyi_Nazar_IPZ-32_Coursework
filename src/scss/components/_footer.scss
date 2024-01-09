@@ -1,0 +1,193 @@
+.footer {
+    background-color: var(--download-color);
+    position: relative;
+    padding-bottom: 47px;
+
+    &::after {
+        display: block;
+        width: 100%;
+        content: '';
+        border: 1px solid var(--main-border-color);
+    }
+
+    &__container {
+        position: relative;
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+        }
+    }
+
+    &__image {
+        position: absolute;
+        top: -78px;
+        left: -10px;
+
+        
+        @include match(mobile) {
+            top: -78px;
+            left: -10px;
+        }
+        @include match(tablet) {
+            top: -217px;
+            left: -33px;
+        }
+        @include match(desktop) {
+            top: -195px;
+            left: -33px;
+        }
+    }
+
+    &__thanks {
+        top: -45px;
+        position: absolute;
+        background-color: var(--thanks-background-color);
+        color: white;
+        border-radius: 15px;
+        display: flex;
+        gap: 50px;
+        height: 112px;
+        max-width: calc(100% - 44px);
+        padding: 26px 44px 26px 133px;
+        @media screen and (max-width: 365px){
+            padding-top: 18px;
+        }
+        
+        @include match(mobile) {
+            top: -45px;
+            padding: 26px 44px 26px 133px;
+            height: 112px;
+            max-width: 386px;
+        }
+        @include match(tablet) {
+            top: -85px;
+            padding: 46px 88px 46px 250px;
+            height: 180px;
+            max-width: 864px;
+            width: 738px;
+        }
+        @include match(desktop) {
+            max-width: 1538px;
+            width: 1250px;
+            top: -85px;
+            position: absolute;
+            padding: 68px 150px 68px 298px;
+            background-color: var(--thanks-background-color);
+            border-radius: 15px;
+            display: flex;
+            gap: 50px;
+            height: auto;
+        }
+    }
+
+    &__frame-35 {
+        position: absolute;
+        width: 150px;
+        height: 125px;
+        top: 0px;
+        left: 348px;
+        display: none;
+
+
+        @include match(mobile) {
+            left: 302px;
+            width: 82px;
+            height: 69px;
+            display: block;
+        }
+        @include match(tablet) {
+            width: 150px;
+            height: 125px;
+            left: 588px;
+            display: block;
+
+        }
+        @include match(desktop) {
+            left: 1100px;
+        }
+    }
+
+    &__text {
+        font-family: Montserrat;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 100%; /* 12px */
+        letter-spacing: -0.6px;
+        text-transform: capitalize;
+
+        
+        @include match(mobile) {
+            font-size: 12px;
+            letter-spacing: -0.6px;
+        }
+        @include match(tablet) {
+            text-transform: none;
+            font-size: 22px;
+            font-weight: 700;
+            letter-spacing: -1.1px;
+        }
+        @include match(desktop) {
+            font-size: 22px;
+            letter-spacing: -1.1px;
+            color: white;
+        }
+    }
+
+    &__nav-menu {
+        padding-top: 118px;
+        padding-bottom: 30px;
+        display: block;
+        justify-content: space-between;
+
+        
+        @include match(mobile) {
+            display: block;
+        }
+        @include match(tablet) {
+            padding-top: 146px;
+            display: flex;
+        }
+    }
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+    }
+
+    &__navigation {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 40px;
+        justify-content: space-around;
+        gap: 20px;
+
+        @include match(mobile) {
+            gap: 30px;
+        }
+        @include match(tablet) {
+            margin-top: 0px;
+        }
+    }
+
+    &__nav-button {
+        font-family: Montserrat;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 20px */
+        letter-spacing: -1px;
+        color: white;
+
+        @media screen and (max-width: 373px){
+            font-size: 18px;
+        }
+
+        &:hover,
+        &:focus {
+            transition: color 0.3s;
+            color: #a87ff3;
+        }
+    }
+}

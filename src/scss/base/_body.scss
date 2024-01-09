@@ -1,0 +1,48 @@
+body {
+    background-color: var(--background-primary-color);
+    color: var(--primary-color);
+    font-family: 'Roboto', sans-serif;
+    font-style: normal; 
+    line-height: normal;
+    font-size: 14px;
+    font-weight: 400;
+
+    @include match(mobile) {
+    }
+}
+
+.dark-theme {
+    --background-primary-color: #FFFFFF;
+    --primary-color: #292929;
+    --theme-button-dark: #292929;
+    --contact-button-color: #292929;
+    --download-color: #292929;
+    --secondary-background-color: #F6FFF6;
+    --secondary-border-color: #000000;
+    --stats-color: #64C661;
+    --tag-border-color: #BE9FF6;
+    --tag-background-color: #E9DFFC;
+    --tag-text-color: #784DC7;
+    --main-border-color: #E6E6E6;
+    --thanks-background-color: #A87FF3;
+    --social-border-color: #E6E6E6;
+    --hero-link: #FFEC70;
+}
+
+.container-top {
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    @media screen and (min-width: 430px) {
+        max-width: 430px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        max-width: 1280px;  
+    }
+}

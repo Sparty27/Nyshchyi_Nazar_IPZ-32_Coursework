@@ -1,0 +1,24 @@
+@import "./utils/mixin";
+@import "./utils/variables";
+@import "./base/reset";
+@import "./base/body";
+
+// header
+@import "./components/header";
+@import "./components/logo";
+@import "./components/mobile-menu";
+
+//main
+@import "./components/index/hero";
+@import "./components/index/stats";
+@import "./components/index/portfolio";
+@import "./components/index/skills";
+@import "./components/index/quotation";
+@import "./components/index/about-me";
+
+//footer
+@import "./components/footer";
+
+//modal
+@import "./components/index/modal";
+@import "./components/index/form";

@@ -1,0 +1,145 @@
+.skills {
+    padding-bottom: 100px;
+    padding-top: 100px;
+
+    @include match(tablet) {
+        padding-top: 100px;
+        padding-bottom: 150px;
+
+    }
+
+    &__container {
+        @include match(mobile) {
+        }
+        @include match(tablet) {
+        }
+        @include match(desktop) {
+        }
+    }
+
+    &__header {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 64px */
+        text-transform: uppercase;
+        color: var(--primary-color);        
+    }
+
+    &__list {
+        margin-top: 50px;
+        gap: 20px;
+        display: flex;
+        flex-wrap: wrap;
+
+        @include match(desktop) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__item {
+        padding: 40px;
+        border-radius: 10px;
+        border: 1px solid var(--secondary-border-color);
+        max-width: 386px;
+        display: block;
+        justify-content: center;
+        gap: 20px;
+        max-width: 100%;
+
+        @include match(mobile) {
+            display: block;
+            justify-content: center;
+            max-width: 386px;
+            padding-bottom: 60px;
+        }
+        @include match(tablet) {
+            padding-bottom: 40px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            max-width: 864px;
+        }
+        @include match(desktop) {
+            max-width: 755.5px;
+        }
+    }
+
+    &__progress-bar {
+        min-width: auto;
+        min-height: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-around;
+        min-width: 220px;
+        min-height: 220px;
+
+        @include match(mobile) {
+            min-width: 220px;
+            min-height: 220px;
+            display: flex;
+            justify-content: space-around;
+        }
+        @include match(tablet) {
+            min-width: 200px;
+            min-height: 200px;
+            width: 200px;
+            height: 200px;
+        }
+    }
+
+    .progress-text {
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__title {
+        font-family: Montserrat;
+        font-size: 35px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: 100%; /* 36px */
+        letter-spacing: -1.8px;
+        color: var(--primary-color);
+        text-align: center;
+        margin-top: 20px;
+        @media screen and (max-width: 330px) {
+            font-size: 30px;
+        }
+
+        @include match(mobile) {
+            margin-top: 20px;
+        }
+        @include match(tablet) {
+            margin-top: 0px;
+            text-align: start;
+        }
+    }
+
+    &__description {
+        margin-top: 20px;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 100%; /* 20px */
+        letter-spacing: -0.3px;
+        color: var(--primary-color);
+        text-align: center;
+
+
+        @include match(tablet) {
+            text-align: start;
+        }
+    }
+}

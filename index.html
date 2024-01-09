@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="src/images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Montserrat:wght@400;500;600;700&family=Roboto:wght@400;700&family=Poppins:ital,wght@0,600;0,700;1,700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/main.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container-top header__container">
+            <a href="./index.html" class="logo">
+                <svg class="header__logo">
+                    <use href="src/images/svg/icons.svg#icon-logo"></use>
+                </svg>
+                <span class="logo__text"> tian </span>
+            </a>
+
+            <nav class="header__navigation">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#home-title" class="header__nav-button">Home</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#portfolio-title" class="header__nav-button">Portfolio</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#skills-title" class="header__nav-button">Skills</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#about-me-title" class="header__nav-button">About Me</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="header__contact">
+                <button id="theme" type="button" class="header__theme-button">
+                    <a class="header__circle"> </a>
+                    <svg class="header__theme">
+                        <use href="src/images/svg/icons.svg#icon-sun"></use>
+                    </svg>
+                    <svg class="header__theme">
+                        <use href="src/images/svg/icons.svg#icon-moon"></use>
+                    </svg>
+                </button>
+                <button type="button" class="header__contact-button" data-modal-open>
+                    Contact Me
+                </button>
+            </div>
+            <button class="mobile-button" type="button" data-menu-button-open aria-expanded="false">
+                <svg class="mobile-button__icon">
+                    <use class="mobile-button--open" href="./src/images/svg/icons.svg#icon-burger-open"></use>
+                </svg>
+            </button>
+        </div>
+        <div class="mobile" data-menu>
+            <nav class="mobile__nav">
+                <div class="mobile__top-container">
+                    <ul class="mobile__nav-list">
+                        <li class="mobile__nav-item">
+                            <a href="#home-title" class="mobile__nav-link">Home</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#portfolio-title" class="mobile__nav-link">Portfolio</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#skills-title" class="mobile__nav-link">Skills</a>
+                        </li>
+                        <li class="mobile__nav-item">
+                            <a href="#about-me-title" class="mobile__nav-link">About Me</a>
+                        </li>
+                    </ul>
+                    <button class="mobile_top-button" data-menu-button-close>
+                        <svg class="mobile-button__icon">
+                            <use class="" href="./src/images/svg/icons.svg#icon-burger-close"></use>
+                        </svg>
+                    </button>
+                </div>
+                <div class="mobile__buttons">
+                    <button id="mobile-theme" type="button" class="header__theme-button">
+                        <a class="header__circle"> </a>
+                        <svg class="header__theme">
+                            <use href="src/images/svg/icons.svg#icon-sun"></use>
+                        </svg>
+                        <svg class="header__theme">
+                            <use href="src/images/svg/icons.svg#icon-moon"></use>
+                        </svg>
+                    </button>
+                    <button type="button" class="header__contact-button mobile-cnt-btn" data-modal-open>
+                        Contact Me
+                    </button>
+                </div>
+            </nav>
+            <ul class="mobile__contacts-list">
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-link" href="tel:+380961111111">+38 050 024 34 92</a>
+                </li>
+                <li class="mobile__contacts-item">
+                    <a class="mobile__contacts-link" href="mailto:info@devstudio.com">nyshchyi.nazar@gmail.com</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <div class="hero__container container-top">
+                <div class="hero__info">
+                    <div id="home-title" class="hero__title">
+                        <h1 class="hero__header">Product designer
+                            <p class="hero__text">CRISTIAN MU&Ntilde;OZ</p>
+                        </h1>
+                    </div>
+
+                    <div class="hero__socials">
+                        <ul class="hero__social-list">
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.instagram.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-instagram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.figma.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-figma"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.linkedin.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-linkedin"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.twitter.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-twitter"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.telegram.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-telegram"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                            <li class="hero__social-item">
+                                <a class="hero__social-link" href="https://www.medium.com/" target="_blank">
+                                    <svg class="hero__icon">
+                                        <use href="src/images/svg/icons.svg#icon-medium"></use>
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <button class="hero__download-button">
+                        Download Curriculum Vitae
+                        <svg class="hero__download-icon">
+                            <use href="src/images/svg/icons.svg#icon-arrow-down">
+                        </svg>
+                    </button>
+                </div>
+                <div class="hero__portal-container">
+                    <svg class="hero__portal-icon">
+                        <use href="src/images/svg/icons.svg#icon-portal"></use>
+                    </svg>
+                </div>
+                <div class="hero__image">
+                    <picture>
+                        <source srcset="
+                            ./src/images/art-694.jpg 1x
+                          " media="(min-width: 1280px)" sizes="694px" width="694" type="image/jpg" />
+                        <img srcset="./src/images/art-694.jpg 1x" src="./src/images/art-694.jpg" alt="Just an art"
+                            width="694" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+        <section class="stats">
+            <div class="container-top">
+                <ul class="stats__list">
+                    <li class="stats__item">
+                        <div id="stats-section" class="stats__success">
+                            <p id="stats-percent" class="stats__value">0%</p>
+                            <p class="stats__description">Job Success
+                                Score on Upwork</p>
+                        </div>
+                    </li>
+                    <li class="stats__item">
+                        <svg class="stats__icon">
+                            <use href="src/images/svg/icons.svg#icon-dawn"></use>
+                        </svg>
+                    </li>
+                    <li class="stats__item">
+                        <div class="stats__figma-community">
+                            <p id="stats-number" class="stats__value">>0</p>
+                            <p class="stats__description">Duplicates on Figma
+                                Community</p>
+                        </div>
+                    </li>
+                    <li class="stats__item">
+                        <svg class="stats__icon">
+                            <use href="src/images/svg/icons.svg#icon-dawn"></use>
+                        </svg>
+                    </li>
+                    <li class="stats__item">
+                        <div id="stats-section" class="stats__finished-works">
+                            <p id="stats-works" class="stats__value">>0K</p>
+                            <p class="stats__description">In Finished
+                                Works</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="portfolio">
+            <div class="portfolio__container container-top">
+                <!-- Slider main container -->
+                <!-- <div class="swiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">Slide 1</div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                    </div>
+                    <div class="swiper-pagination"></div>
+                
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                    <div class="swiper-scrollbar"></div>
+                </div> -->
+                <h2 id="portfolio-title" class="portfolio__header">Portfolio</h2>
+                <div class="swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                        <div class="swiper-slide">
+                            <li class="portfolio__item">
+                                <div class="portfolio__image">
+                                    <picture>
+                                        <source srcset="
+                                                ./src/images/pattern-300.jpg 1x
+                                              " media="(min-width: 1280px)" sizes="300px" width="300"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-357.jpg 1x
+                                              " media="(min-width: 768px)" sizes="357px" width="357"
+                                            type="image/jpg" />
+                                        <source srcset="
+                                                ./src/images/pattern-326.jpg 1x
+                                              " media="(max-width: 767px)" sizes="326px" width="326"
+                                            type="image/jpg" />
+                                        <img srcset="./src/images/pattern-300.jpg 1x" src="./src/images/pattern-300.jpg"
+                                            alt="Just an art" width="300" />
+                                    </picture>
+                                </div>
+                                <h3 class="portfolio__title">Mi portal U</h3>
+                                <div class="portfolio__tags">
+                                    <p class="portfolio__tag">
+                                        UX Design
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        University
+                                    </p>
+                                    <p class="portfolio__tag">
+                                        JavaScript
+                                    </p>
+                                </div>
+                                <a target="_blank" href="https://www.figma.com/" class="portfolio__button">Figma
+                                    community</a>
+                            </li>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <section class="skills">
+            <div class="container-top skills__container">
+                <h2 id="skills-title" class="skills__header">Skills</h2>
+                <ul class="skills__list">
+                    <li class="skills__item">
+                        <div id="circle" class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">UX Design</h3>
+                            <p class="skills__description">
+                                UI design is the process of designing the visual and interactive elements of a user
+                                interface, such as buttons, icons, and layout, to create an intuitive and pleasing
+                                experience for users.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div id="circle2" class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">UI Design</h3>
+                            <p class="skills__description">
+                                UI design is the process of designing the visual and interactive elements of a user
+                                interface, such as buttons, icons, and layout, to create an intuitive and pleasing
+                                experience for users.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div id="circle3" class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">Information Architecture</h3>
+                            <p class="skills__description">Information architecture is the design of the structure and
+                                organization of content on a website or digital product to make it easy for users to
+                                navigate and understand.</p>
+                        </div>
+                    </li>
+                    <li class="skills__item">
+                        <div id="circle4" class="skills__progress-bar">
+
+                        </div>
+                        <div class="skills__info">
+                            <h3 class="skills__title">Figma</h3>
+                            <p class="skills__description">Figma is a cloud-based design tool that allows teams to
+                                collaborate on the design process in real time. It offers a range of features for
+                                designing, prototyping, and sharing user interfaces.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="quotation">
+            <div class="quotation__container container-top">
+                <h2 class="quotation__header">
+                    Kaleb Lechtenberg
+                </h2>
+                <p class="quotation__text">
+                    "Working with this freelancer has been great. His attention to detail is unparalleled and finished
+                    all work ahead of schedule. Will gladly send more work and I do not hesitate to recommend him to you
+                    on your project also."
+                </p>
+                <div class="quotation__icon-container">
+                    <svg class="quotation__icon">
+                        <use href="src/images/svg/icons.svg#icon-shield">
+                    </svg>
+                </div>
+            </div>
+        </section>
+        <section class="about-me">
+            <div class="about-me__container container-top">
+                <div class="about-me__part">
+                    <div class="about-me__info info--no-align-items">
+                        <h2 id="about-me-title" class="about-me__header">
+                            About me
+                            <svg class="about-me__zig-zag">
+                                <use href="src/images/svg/icons.svg#icon-zig-zag-main">
+                            </svg>
+                        </h2>
+                        <p class="about-me__text">
+                            I am a <span class="gradient__designer">Product Designer</span> and Frontend Developer, I
+                            fully understand the process of design and development of a digital product, my job is to
+                            make a product usable and visually appealing, through the <span
+                                class="gradient__designer">Design Thinking </span>methodology I manage to create
+                            products that are endearing to users.
+                        </p>
+                    </div>
+                    <picture>
+                        <source srcset="
+                            ./src/images/baby-746.jpg 1x
+                          " media="(min-width: 1280px)" sizes="746px" width="621" height="200" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/baby-418.jpg 1x
+                          " media="(min-width: 768px)" sizes="418px" width="360" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/baby-386.jpg 1x
+                          " media="(max-width: 767px)" sizes="386px" width="386" height="448" type="image/jpg" />
+                        <img srcset="./src/images/baby-746.jpg 1x" src="./src/images/baby-746.jpg"
+                            alt="Cristian David in infancy" height="200" width="500"/>
+                    </picture>
+                </div>
+                <div class="about-me__part">
+                    <div class="about-me__info">
+                        <p class="about-me__text">
+                            I am passionate about <span class="gradient__learning">never stop learning</span>, I am
+                            constantly training and learning about new and changing <span
+                                class="gradient__learning">technology</span> trends that way I bring an updated opinion
+                            of the Tech industry.
+                        </p>
+                    </div>
+                    <picture>
+                        <source srcset="
+                            ./src/images/child-794.jpg 1x
+                          " media="(min-width: 1280px)" sizes="794px" width="630" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/child-445.jpg 1x
+                          " media="(min-width: 768px)" sizes="445px" width="379" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/child-386.jpg 1x
+                          " media="(max-width: 767px)" sizes="386px" width="386" height="467" type="image/jpg" />
+                        <img srcset="./src/images/child-794.jpg 1x" src="./src/images/child-794.jpg"
+                            alt="Young Cristian David" width="794" />
+                    </picture>
+                </div>
+                <div class="about-me__part">
+                    <div class="about-me__info">
+                        <p class="about-me__text">
+                            My full name is <span class="gradient__name">Cristian David Muñoz Camayo</span> and more
+                            than what I said before I am a dreamer, I am proudly <span
+                                class="gradient__colombian">Colombian</span> and in me you will find a human being with
+                            the desire to do his best to help others.
+                        </p>
+                    </div>
+                    <picture>
+                        <source srcset="
+                            ./src/images/teenager-748.jpg 1x
+                          " media="(min-width: 1280px)" sizes="730px" width="621" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/teenager-419.jpg 1x
+                          " media="(min-width: 768px)" sizes="419px" width="360" type="image/jpg" />
+                        <source srcset="
+                            ./src/images/teenager-386.jpg 1x
+                          " media="(max-width: 767px)" sizes="386px" width="386" height="422" type="image/jpg" />
+                        <img srcset="./src/images/teenager-748.jpg 1x" src="./src/images/teenager-748.jpg"
+                            alt="Young Cristian David" width="730" />
+                    </picture>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__container container-top">
+            <div class="footer__thanks">
+                <div class="footer__image">
+                    <picture>
+                        <source srcset="
+                            ./src/images/art-footer-281.png 1x
+                          " media="(min-width: 768px)" sizes="281px" width="281" type="image/png" />
+                        <source srcset="
+                            ./src/images/art-footer-135.png 1x
+                          " media="(max-width: 767px)" sizes="135px" width="135" type="image/png" />
+                        <img srcset="./src/images/art-footer-281.png 1x" src="./src/images/art-footer-281.png"
+                            alt="Just an art" width="745" />
+                    </picture>
+                </div>
+                <div class="footer__text-block">
+                    <p class="footer__text">Thanks for visit my website
+                    </p>
+                    <p class="footer__text">If you have any questions you can write me to any of my social networks, I
+                        am sure I will answer you.</p>
+                </div>
+                <svg class="footer__frame-35">
+                    <use href="src/images/svg/icons.svg#icon-frame-35"></use>
+                </svg>
+            </div>
+            <div class="footer__nav-menu">
+                <a href="/index.html" class="logo logo--gap">
+                    <svg class="footer__logo">
+                        <use href="src/images/svg/icons.svg#icon-logo-bigger"></use>
+                    </svg>
+                    <span class="logo__text footer-text"> tian </span>
+                </a>
+                <ul class="footer__navigation">
+                    <li class="footer__item"><a href="#home-title" class="footer__nav-button">Home</a></li>
+                    <li class="footer__item"><a href="#portfolio-title" class="footer__nav-button">Portfolio</a></li>
+                    <li class="footer__item"><a href="#skills-title" class="footer__nav-button">Skills</a></li>
+                    <li class="footer__item"><a href="#about-me-title" class="footer__nav-button">About Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal__button" data-modal-close> <svg class="modal__icon">
+                    <use href="./src/images/svg/icons.svg#icon-close"></use>
+                </svg></button>
+            <p class="modal__title">Contact Me</p>
+            <form id="form" class="form">
+                <div class="form__contacts">
+                    <div class="form__contact">
+                        <label for="name" class="form__label">Name</label>
+                        <input id="name" name="name" class="form__input" type="text" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="phone" class="form__label">Phone Number</label>
+                        <input id="phone" name="phone" class="form__input" type="tel" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-phone-mod"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="email" class="form__label">Email Address</label>
+                        <input id="email" name="email" class="form__input" type="email" required placeholder="">
+                        <svg class="form__icon">
+                            <use href="./src/images/svg/icons.svg#icon-mail"></use>
+                        </svg>
+                    </div>
+                    <div class="form__contact">
+                        <label for="comment" class="form__label">Message</label>
+                        <textarea id="comment" name="comment" id="text" placeholder="Enter your message"
+                            class="form__textarea"></textarea>
+                    </div>
+                    <input type="submit" class="form__send" value="Send"></input>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- <script src="src/js/circle-progress.min.js"></script>
+    <script src="src/js/counter.min.js"></script> -->
+
+    <script src="src/js/scripts.min.js"></script>
+</body>
+
+</html>

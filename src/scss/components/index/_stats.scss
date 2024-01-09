@@ -1,0 +1,142 @@
+.stats {
+    padding-top: 90px;
+
+    @include match(tablet) {
+        padding-top: 150px;
+    }
+    @include match(desktop) {
+        padding-top: 150px;
+    }
+
+
+    &__list {
+        background-color: var(--secondary-background-color);
+        border-radius: 29px;
+        border: 1px solid var(--secondary-border-color);
+
+        padding: 82px 100px;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        margin-left: 22px;
+        margin-right: 22px;
+        padding-left: 0px;
+        padding-right: 0px;
+
+        @include match(mobile) {
+            display: block;
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+        @include match(tablet) {
+            justify-content: space-between;
+            display: flex;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        @include match(desktop) {
+            margin-left: 0px;
+            margin-right: 0px;
+            padding-left: 100px;
+            padding-right: 100px;
+        }
+    }
+    
+    &__success {
+        max-width: 178px;
+        margin: 0 auto;
+        
+        @include match(mobile) {
+            max-width: 178px;
+            margin: 0 auto;
+        }
+        @include match(tablet) {
+            max-width: 185px;
+        }
+        @include match(desktop) {
+            max-width: 287px;
+        }
+    }
+
+    &__figma-community {
+        margin: 0 auto;
+        margin-top: 144px;
+        max-width: 216px;
+        @include match(tablet) {
+            margin-top: 0px;
+        }
+        @include match(desktop) {
+            max-width: 387px;
+        }
+    }
+    &__finished-works {
+        margin: 0 auto;
+        margin-top: 144px;
+        max-width: 117px;
+        @include match(tablet) {
+            margin-top: 0px;
+        }
+        @include match(desktop) {
+            max-width: 190px;
+        }
+    }
+    &__value {
+        font-family: Anton;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 90%; /* 115.2px */
+        text-transform: uppercase;
+        color: var(--stats-color);
+        display: flex;
+        justify-content: space-around;
+
+
+        @include match(mobile) {
+            justify-content: space-around;
+            font-size: 64px;
+        }
+        @include match(desktop) {
+            font-size: 100px;
+            display: flex;
+            justify-content: space-around;
+        }
+    }
+
+    &__description {
+        margin-top: 21px;
+        font-family: Montserrat;
+        // text-align: center;
+        font-size: 22px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%; /* 22px */
+        letter-spacing: -1.1px;
+        color: var(--stats-color);
+        text-align: center;
+
+        
+        @include match(mobile) {
+            text-align: center;
+        }
+        @include match(desktop) {
+            font-size: 30px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 36px */
+            letter-spacing: -1.8px;
+        }
+    }
+    &__icon {
+        width: 70px;
+        height: 70px;
+        min-width: 70px;
+        min-height: 70px;
+
+        display: none;
+
+        @include match(desktop) {
+            display: flex;
+        }
+    }
+}
